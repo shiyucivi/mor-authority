@@ -1,0 +1,110 @@
+.rele-info{
+  background-color: #292c33;
+  background-image: url("../assets/home_page/bg_home_introdution.png");
+  background-repeat: no-repeat;
+  background-position: right 0;
+  width:100%;
+  display: flex;
+  justify-content: center;
+}
+.rele-info .info-text{
+  width:40%;
+  margin-right:12%;
+  margin-bottom: 40px;
+}
+.rele-info .info-text h1{
+  color:#f6f6f6;
+  font-size:20px;
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+.rele-info .info-text p{
+  color:#f6f6f6;
+  font-size:16px;
+  margin-bottom:40px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+.rele-info .info-text .contact-button{
+  margin-bottom:40px;
+  text-align: start;
+}
+.rele-info .info-text .contact-button a:nth-child(1) span{
+  margin-right: 10%;
+}
+.rele-info .info-text .contact-button a span{
+  padding: 10px 20px 10px 20px;
+  color:#f6f6f6;
+  border-radius:30px;
+  border:1px solid #f6f6f6;
+  opacity: 0.5;
+}
+
+.rele-info .qr-code{
+  display: flex;
+  align-items: center;
+  color:#f6f6f6;
+  margin-right: 7%;
+}
+.rele-info .qr-code #qr-code-1{
+  width:150px;
+  margin-right:20%; 
+}
+.rele-info .qr-code #qr-code-2{
+  width:150px;
+}
+.qr-code img{
+  margin-top: 50px;
+}
+.qr-code h1{
+  font-size: 20px;
+  font-weight:normal;
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer#footer{
+  text-align: center;
+  width:100%;
+  height:30px;
+  line-height: 30px;
+  margin:0;
+  font-size:14px;
+  background-color: #040b10;
+  color:#767879;
+}
+
+/*底部信息移动端适配*/
+@media(max-width: 959px){
+  .rele-info .info-text p{
+    font-size:14px;
+  }
+  .rele-info .info-text .contact-button a span{
+    font-size:12px;
+    padding: 10px 10px 10px 10px;
+  }
+  .rele-info{
+    display: flex;
+    flex-direction: column;
+  }
+  .rele-info .info-text{
+    width:80%;
+    margin-left: 10%;
+    margin-bottom: 0;
+  }
+  .rele-info .info-text p{
+    margin-bottom: 20px;
+  }
+  .rele-info .qr-code #qr-code-1{
+    margin-left: 30%;
+  }
+  .rele-info .qr-code #qr-code-1 img{
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+  .rele-info .qr-code #qr-code-1 h1{
+    display: none;
+  }
+}
+

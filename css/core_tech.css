@@ -1,0 +1,67 @@
+.moran-tech .title{
+  padding-top: 0;
+}
+.moran-tech .tech-items{
+  width:84%;
+  display:flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+  max-width:1200px;
+}
+.moran-tech .tech-items .item{
+  font-size:18px;
+  text-align: center;
+  font-weight:bold;
+  color:#666666;
+  background-color: #fff;
+  width:250px;
+  height:300px;
+}
+
+
+
+.moran-tech .tech-items .item h2{
+  margin-top:20px;
+  margin-bottom:20px;
+  color:#333333;
+}
+.moran-tech .tech-items .item h3{
+  font-size:16px;
+  line-height:28px;
+}
+#feel .tech-items .item h3 span{
+  display: inline-block;
+  padding-top: 4px;
+  padding-left: 28px;
+  padding-right: 28px;
+  line-height: 20px;
+}
+
+
+#know-map{
+  background-color: #fff;
+  margin-top: 40px;
+  text-align: center;
+}
+#know-map img{
+  margin-bottom: 40px;
+}
+
+#know-map .title div:nth-child(2){
+  width:60%;
+  margin-left: 20%;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+#know-map .title div:nth-child(2) span{
+  display: inline-block;
+  width:200px;
+  font-size:18px;
+  color:#333333;
+}
+#know-map .title div:nth-child(2) span:nth-child(1),#know-map .title div:nth-child(2) span:nth-child(2),#know-map .title div:nth-child(2) span:nth-child(3){
+  border-style: solid;
+  border-width: 0 1px 0 0;
+  border-color:#333333;
+}

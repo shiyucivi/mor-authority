@@ -1,0 +1,158 @@
+/*对话平台的样式*/
+
+.talk-tech{
+  width: 100%;
+  text-align: center;
+  padding-bottom: 40px;
+}
+.talk-tech .title{
+  text-align: center;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.talk-tech .center-control{
+}
+.talk-tech .center-control .center-control-text{
+  width:84%;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+}
+
+.talk-tech .center-control .center-control-item{
+  background-color: #fff;
+  width:250px;
+}
+.talk-tech .center-control .center-control-item img{
+  margin-top: 20px;
+}
+.talk-tech .center-control .center-control-item h2{
+  font-size:18px;
+  margin-top:20px;
+  margin-bottom: 20px;
+  font-weight:500;
+}
+.talk-tech .center-control .center-control-item p{
+  margin-top:5px;
+  margin-bottom: 40px;
+  color:#666666;
+}
+.talk-tech .center-control .center-control-item h3{
+  font-size:16px;
+  font-weight:normal;
+  margin-bottom:40px;
+  line-height: 30px;
+  color:#666666;
+}
+
+.talk-tech .center-control .voice-and-semantic{
+  display: flex;
+  justify-content: space-between;
+  width:84%;
+  max-width: 1200px;
+}
+.talk-tech .center-control .voice-and-semantic .voice div:nth-child(1),.talk-tech .center-control .voice-and-semantic .semantic div:nth-child(1){
+  color:#fff;
+  font-size:22px;
+  font-weight: 600;
+  transform: translate(15px,70px);
+}
+
+.talk-tech .center-control .voice-and-semantic .voice .icons,.talk-tech .center-control .voice-and-semantic .semantic .icons{
+  display: flex;
+  transform: translate(33px,-210px);
+  
+}
+.talk-tech .center-control .voice-and-semantic .voice .icons img,.talk-tech .center-control .voice-and-semantic .semantic .icons img{
+  margin:40px;
+}
+
+.talk-tech .center-control .voice-and-semantic .voice .icons,.talk-tech .center-control .voice-and-semantic .semantic .icons>div p{
+  width:100px;
+}
+
+.talk-tech .center-control .voice-and-semantic .voice .icons-title,.talk-tech .center-control .voice-and-semantic .semantic .icons-title{
+  color:white;
+  transform: translate(0,-230px);
+  font-size:18px;
+}
+.talk-tech .center-control .voice-and-semantic .voice .icons-title span{
+  margin: 55px;
+}
+.talk-tech .center-control .voice-and-semantic .semantic .icons-title span{
+  margin:10px;
+}
+.talk-tech .center-control .voice-and-semantic .voice,.talk-tech .center-control .voice-and-semantic .semantic{
+  height:330px;
+}
+
+.talk-tech .title p{
+  font-size: 16px;
+  color:#333333;
+}
+.talk-tech .title,.small-program .title{
+}
+.talk-tech .small-program-icons{
+  display: flex;
+  justify-content: space-around;
+  width:84%;
+  height:40px;
+  max-width: 1200px;
+}
+.talk-tech .small-program-icons>span{
+  display: inline-block;
+  height:35px;
+  margin:0 4.7%;
+  line-height:30px;
+  vertical-align: 5px;
+}
+.talk-tech .small-program-icons>span>span{
+  display: inline-block;
+  position: relative;
+  top:-10px;
+  color:#333333;
+}
+
+.small-program>img{
+  
+}
+.small-program{
+  background-color: #fff;
+}
+
+.small-program .c-s{
+  display: flex;
+  justify-content: space-between;
+  width:84%;
+  max-width: 1200px;
+}
+.small-program .c-s h2{
+  font-size:18px;
+  letter-spacing: 20px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+.small-program .c-s .client{
+  width:40%;
+  border-style:solid;
+  border-width:0 0.5px 0 0;
+  border-color:rgb(235,235,235);
+}
+.small-program .c-s .client-items,.small-program .c-s .cloud-items{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 70px;
+}
+.small-program .c-s .cloud{
+  width:45%;
+}
+.small-program .c-s p{
+  font-size:18px;
+  color:#060E14;
+}
+.compony_content p{
+  text-align: justify;
+}

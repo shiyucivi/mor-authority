@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+  <meta name="toTop" content="true">
+  <link rel="shortcut icon" href="./assets/imoran.ico" />
+  <meta name="keywords" content="蓦然,蓦然认知,人工智能,智能,认知,自然语言理解,mor,moran,小蓦,小蓦机器人,蓦然认知科技,语音,
+    智能交互,决策,语音交互，echo,alexa,viv,siri,cortana,google now，度秘" />
+  <meta name="description"
+    content="蓦然认知（Moran）是一家以认知计算为核心的人工智能公司，拥有领先的智能交互及决策引擎Mor（又名：小蓦机器人）. Mor可以理解人类语言，并与人自然对话，驱动机器一起为人们提供更加友好和高效的服务。我们相信Mor的持续演将改变人与机器之间的交互方式和信息获取方式，并最终形成全新的互联网入口。" />
+  <title>蓦然认知</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/ionicons.min.css">
+  <link rel="stylesheet" href="css/joinus_basev3.css">
+  <link rel="stylesheet" href="css/Validform-5.3.2.css">
+
+  <!--导航栏样式-->
+  <link rel="stylesheet" href="css/new_nav_v1.css">
+  <!--底部样式-->
+  <link rel="stylesheet" href="css/footer_info.css">
+
+  <style type="text/css">
+    /* 导航跳转 */
+    html,body{
+      height:93%;
+    }
+
+    .menu>ul>li:nth-child(6) a {
+      color: #ECAB3B;
+    }
+
+    .menu>ul>li:nth-child(6) {
+      position: relative;
+    }
+
+    .menu>ul>li:nth-child(6):before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -35px;
+      margin-top: 15px;
+      width: 70px;
+      height: 2px;
+      background: #ECAB3B;
+    }
+
+    /* body {
+            width: 100%;
+            height: 100%;
+        } */
+    .body_main {
+      width: 90%;
+      height: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .top_router {
+      width: 100%;
+      height: 16px;
+      line-height: 16px;
+      margin: 28px 0px;
+      font-size: 16px;
+    }
+
+    .top_router i {
+      display: inline-block;
+      width: 4px;
+      height: 100%;
+      margin-right: 10px;
+      background-color: #f4b035;
+    }
+
+    .top_router span {
+      display: inline-block;
+      height: 100%;
+    }
+
+    .top_router .router_url {
+      color: #080f18;
+    }
+
+    .top_router .router_last {
+      color: #f4b035;
+    }
+
+    .contact_wrap {
+      width: 100%;
+    }
+
+    .contact_way {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 30px 40px;
+      background-color: #fff;
+    }
+
+    .contact_way h2 {
+      font-size: 24px;
+      color: #000;
+    }
+
+    .contact_fast {
+      margin-bottom: 10px;
+      padding-bottom: 46px;
+    }
+
+    .contact_fast h2 {
+      padding: 28px 0px 32px;
+    }
+
+    .contact_fast .contact_info p {
+      height: 42px;
+      line-height: 42px;
+      color: #686868;
+      /* font-size: 18px; */
+      font-size: 16px;
+      display: inline-block;
+      width: 100%;
+
+    }
+
+    .contact_fast .contact_info p img {
+      margin-bottom: 4px;
+      margin-right: 5px;
+    }
+
+    .contact_form h2 {
+      margin-bottom: 40px;
+    }
+
+    .contact_form form {}
+
+    .contact_form form .input_group {
+      display: inline-block;
+      margin: 0px 100px 40px 0px;
+      box-sizing: border-box;
+    }
+
+    label {
+      display: inline-block;
+      text-align: right;
+      /* font-size: 18px; */
+      font-size: 16px;
+      color: #000;
+      margin-right: 40px;
+      box-sizing: border-box;
+    }
+
+    .group_l {
+      width: 354px;
+    }
+
+    .group_l label {
+      width: 70px;
+    }
+
+    .group_r {
+      width: 388px;
+    }
+
+    .group_r label {
+      width: 104px;
+    }
+
+    .input_group label i {
+      padding-right: 6px;
+    }
+
+    form .input_group input,
+    form .textarea_group textarea,
+    form .input_group select {
+      box-sizing: border-box;
+      border: none;
+      outline: none;
+      background-color: #f6f6f6;
+      border: 1px solid #e7e7e7;
+      color: #000;
+      font-size: 14px;
+    }
+
+    form .input_group input,
+    form .input_group select {
+      display: inline-block;
+      width: 240px;
+      height: 36px;
+      line-height: 36px;
+      text-indent: 20px;
+    }
+
+    form .input_group select {
+      border: 0px;
+      outline: 1px solid #e7e7e7;
+      background: url("./assets/imgs/ic_morweb_conectus_arrow.png") no-repeat 220px center;
+      appearance: none;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      width: 240px;
+      text-indent: 20px;
+      /* padding: 0px 20px; */
+      box-sizing: border-box;
+      text-overflow: "";
+      background-color: #f6f6f6;
+    }
+
+    form .textarea_group {
+      width: 100%;
+      padding: 0px 16px;
+      box-sizing: border-box;
+    }
+
+    form .textarea_group label {
+      text-align: right;
+      padding-left: 4px;
+      height: 36px;
+      /* line-height: 36px; */
+    }
+
+    form .textarea_group label span {
+      font-size: 18px;
+      color: #b8b8b8;
+    }
+
+    form .textarea_group textarea {
+      width: 100%;
+      height: 240px;
+      padding: 20px;
+      resize: none;
+    }
+
+    form .btn_wrap {
+      width: 100%;
+      height: 40px;
+      margin: 30px 0px 10px;
+      text-align: center;
+    }
+
+    form .btn_wrap .submit_btn {
+      outline: none;
+      border: none;
+      display: inline-block;
+      width: 160px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      background-color: #f4b035;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .contact_me {
+      display: block;
+      width: 200px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      font-size: 23px;
+      cursor: pointer;
+      background: #E4B240;
+      color: #fff;
+      margin: 0 auto;
+      margin-top: 50px;
+      text-decoration: none;
+    }
+
+    .contact_me:hover {
+      transform: scale(1.2);
+      text-decoration: none;
+    }
+
+    #footer {
+      margin-top: 30px;
+    }
+
+    @media screen and (max-width:959px) {
+      .contact_form {
+        padding: 20px 0px !important;
+      }
+
+      .contact_form h2 {
+        padding-left: 40px;
+      }
+
+      #contactForm {
+        width: 100%;
+        overflow: hidden;
+      }
+
+      .contact_form form .input_group {
+        text-align: right;
+        margin: 0px 0px 40px 0px;
+      }
+
+      .group_l,
+      .group_r {
+        width: 100%;
+        box-sizing: border-box;
+        padding-right: 30px;
+      }
+
+      .group_l label,
+      .group_r label {
+        width: auto;
+      }
+
+      label {
+        margin-right: 0px;
+      }
+
+
+    }
+  </style>
+  
+  
+
+
+</head>
+
+<body>
+  <!-- nav -->
+  <!--导航栏-->
+  <header class="header_nav">
+    <a href="index.html"><img src="./assets/images/logo_morweb_home.png" alt=""></a>
+      <div class="header_nav_xf">
+        <ul>
+        <h6 class="clearfix"></h6>
+        </ul>
+        <h6 class="clearfix"></h6>
+      </div>
+      <div class="nav_anniu">
+        <div class="menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    <h6 class="clearfix"></h6>
+  </header>
+  <!--banner-->
+  <div class="banner_main content_max ">
+    <div class="page_cookie">
+      <div class="orangeBox"></div>
+      <a href="./index.html">首页 ></a> <span> 联系我们</span>
+    </div>
+  </div>
+
+  <div class="body_main">
+    <div class="contact_wrap">
+      <div class="contact_way contact_fast">
+        <h2>您可以通过以下方式联系我们：</h2>
+        <div class="contact_info">
+          <p><img src="./assets/images/contact/ic_morweb_conectus_email.png" alt="icon"> 邮箱：info@imoran.net</p>
+          <p><img src="./assets/images/contact/ic_morweb_conectus_beijing.png" alt="icon">
+            北京总部：北京市海淀区学院路甲5号768创意产业园东楼A座401室</p>
+          <!-- <p><img src="./assets/images/contact/ic_morweb_conectus_shanghai.png" alt="icon">
+            上海分部：上海市长宁区紫云路421号天山soho广场T2-707室</p> -->
+          <p><img src="./assets/images/contact/ic_morweb_conectus_shenzhen.png" alt="icon"> 深圳分部：深圳南山区软件产业基地6栋4H</p>
+          <p><img src="./assets/images/contact/ic_morweb_conectus_wuhan.png" alt="icon">
+            武汉分部：湖北省武汉市洪山区关东街道关南园四路4号腾讯众创空间二楼 A007</p>
+        </div>
+      </div>
+      <a class="contact_me" href="mailto:info@imoran.net">点我发送邮件</a>
+      <!-- <div class="contact_way contact_form">
+               <h2>或者您留下简介以便我们联系您：</h2>
+               <form id="contactForm">
+                   <div class="input_group group_l">
+                       <label for="name"><i>*</i>姓名：</label>
+                       <input type="text" name="contact_name" id="name">
+                   </div>
+                   <div class="input_group group_r">
+                        <label for="Industry">行业：</label>
+                        <input type="text" name="contact_industry" id="industry">
+                    </div>
+                    <div class="input_group group_l">
+                        <label for="group">组织：</label>
+                        <input type="text" name="contact_group" id="group">
+                    </div>
+                    <div class="input_group group_r">
+                        <label for="tel"><i>*</i>电话：</label>
+                        <input type="tel" name="contact_tel" id="tel">
+                    </div>
+                    <div class="input_group group_l">
+                        <label for="email"><i>*</i>邮箱：</label>
+                        <input type="email" name="contact_email" id="email">
+                    </div>
+                    <div class="input_group group_r">
+                        <label for="intent"><i>*</i>联系意向：</label>
+                        <select name="contact_intent" id="intent">
+                            <option value="媒体合作">商务合作</option>
+                            <option value="商务合作">媒体合作</option>
+                            <option value="其他">其他</option>
+                        </select>
+                    </div>
+                    <div class="textarea_group">
+                        <label for="info">信息：<span>（150字以内）</span></label>
+                        <textarea name="contact_info" id="info" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="btn_wrap">
+                        <input class="submit_btn" id="submit_btn" type="button" value="确认提交">
+                    </div>
+               </form>
+           </div> -->
+    </div>
+  </div>
+
+  <footer id="footer" style="margin-bottom: 0">
+    北京蓦然认知科技有限公司 © 京ICP备16045349号
+  </footer>
+
+</body>
+<script src="js/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/Validform-5.3.2_min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/layer-3.0.2.js" type="text/javascript" charset="utf-8"></script>
+<!-- <script src="js/layer-3.0.2.js" type="text/javascript" charset="utf-8"></script> -->
+<script src="js/scroll.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/megamenu.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/goTotop.js" type="text/javascript" charset="utf-8"></script>
+<script>
+  $(function () {
+    $('#submit_btn').on('click', function (e) {
+      e.preventDefault();
+      var name = $('#name').val();
+      var industry = $('#industry').val();
+      var group = $('#group').val();
+      var tel = $('#tel').val();
+      var email = $('#email').val();
+      var intent = $('#intent').val();
+      var info = $('#info').val();
+
+
+      var dataJson = {
+        name: name,
+        industry: industry,
+        company: group,
+        telephone: tel,
+        email: email,
+        contact_intent: intent,
+        contact_detail: info
+      }
+
+      // console.log(dataJson)
+      if (info.length > 150) {
+        return layer.msg('信息字数超出150限制！', {
+          icon: 0
+        });
+      }
+      if (!name) {
+        return layer.msg('姓名不能为空！', {
+          icon: 0
+        });
+      }
+      if (!email) {
+        return layer.msg('邮箱不能为空！', {
+          icon: 0
+        });
+      } else if (email && (!/^\w+@\w+.\w+$/.test(email))) {
+        return layer.msg('邮箱格式不正确！', {
+          icon: 0
+        });
+      }
+      if (!tel) {
+        return layer.msg('电话不能为空！', {
+          icon: 0
+        });
+      } else if (tel && (!/^1[345678]\d{9}$/.test(tel))) {
+        return layer.msg('电话格式不正确！', {
+          icon: 0
+        });
+      }
+
+      var formData = $("#contactForm").serialize();
+      // layer.msg('提交失败', {icon:0});
+
+      $.ajax({
+        type: "POST",
+        dataType: "JSON",
+        url: "http://101.201.210.129:27892/concat",
+        data: dataJson,
+        success: function (data) {
+          layer.msg(data.msg, {
+            icon: data.ret
+          });
+        },
+        error: function (data) {
+          layer.msg(data.msg, {
+            icon: data.ret
+          });
+        }
+      });
+    });
+
+  })
+</script>
+<!--导航栏JS与样式-->
+<script src="js/nav_v1.js"></script>
+<script src="js/currency_js.js"></script>
+
+
+</html>

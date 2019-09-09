@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="zh" class="no-js">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width">
+  <meta content="yes" name="apple-touch-fullscreen">
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <meta content="telephone=no" name="format-detection">
+  <meta name="toTop" content="true">
+  <meta http-equiv="Expires" content="0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Cache-control" content="no-cache">
+  <meta http-equiv="Cache" content="no-cache">
+  <link rel="shortcut icon" href="./assets/imoran.ico" />
+  <meta name="keywords" content="蓦然,蓦然认知,人工智能,智能,认知,自然语言理解,mor,moran,小蓦,小蓦机器人,蓦然认知科技,语音,
+    智能交互,决策,语音交互，echo,alexa,viv,siri,cortana,google now，度秘" />
+  <meta name="description"
+    content="蓦然认知（Moran）是一家以认知计算为核心的人工智能公司，拥有领先的智能交互及决策引擎Mor（又名：小蓦机器人）. Mor可以理解人类语言，并与人自然对话，驱动机器一起为人们提供更加友好和高效的服务。我们相信Mor的持续演将改变人与机器之间的交互方式和信息获取方式，并最终形成全新的互联网入口。" />
+  <title>蓦然认知</title>
+  <link rel="stylesheet" type="text/css" href="css/ionicons.min.css">
+  <link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css">
+  <link rel="stylesheet" type="text/css" href="css/animate-3.6.0.min.css">
+  <link rel="stylesheet" type="text/css" href="css/home_swiper.css">
+  <!-- video播放插件 -->
+  <link rel="stylesheet" type="text/css" href="css/video.css" />
+  <link rel="stylesheet" type="text/css" href="css/home_basev3.css">
+  <!-- 时间线 -->
+  <link rel="stylesheet" type="text/css" href="css/timeLine.css">
+  <!-- 加载动画 -->
+  <!-- <link rel="stylesheet" type="text/css" href="css/loading.css"> -->
+  <!--[if IE]>
+		<script src="http://libs.baidu.com/html5shiv/3.7/html5shiv.min.js"></script>
+    <![endif]-->
+  <!--解决方案样式-->
+  <link rel="stylesheet" href="css/home_resolution_v1.css">
+  <!--底部公司简介样式-->
+  <link rel="stylesheet" type="text/css" href="css/footer_info.css">
+  <!--导航栏样式-->
+  <link rel="stylesheet" href="css/new_nav_v1.css">
+  <!--底部商标展示-->
+  <link rel="stylesheet" href="css/cooperative-brands.css">
+  
+  <style>
+    /* .bannerBox:before {
+
+        }
+        .bannerBox:after {
+
+        } */
+    .lazy {
+      display: none;
+    }
+
+    .core_technology_item>p {
+      color: #000 !important;
+    }
+
+    /*移动端样式适配*/
+    @media(max-width: 1081px){
+      /*主页内容样式*/
+      .plan .talk-and-brain img{
+        width:400px;
+      }
+      .plan .resolution .resolution-img{
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .plan .resolution .resolution-img img{
+        width:180px;
+      }
+      .plan .resolution .resolution-img .resolution-img-item div{
+        font-size:14px;
+        transform: translate(0px,30px);
+      }
+      .plan .resolution #industry .resolution-img-item div{
+        font-size:14px;
+        transform:translate(0,130px);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!--导航栏-->
+  <header class="header_nav">
+		<a href="index.html"><img src="./assets/images/logo_morweb_home.png" alt=""></a>
+		<div class="header_nav_xf">
+			<ul>
+			<h6 class="clearfix"></h6>
+			</ul>
+			<h6 class="clearfix"></h6>
+		</div>
+		<div class="nav_anniu">
+			<div class="menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+		<h6 class="clearfix"></h6>
+	</header>
+  <!--导航栏结束-->
+
+
+  <!-- swiper -->
+  <div class="turn-waper">
+    <a class="arrow-left" href="#"></a>
+    <a class="arrow-right" href="#"></a>
+    <div class="swiper-container lb-container">
+      <canvas id="canvas" style="position: absolute;z-index:2;top:0;left: 0;width: 100%;height: 100%;">
+      </canvas>
+      <div class=" bannerBox">
+        <img class="slider_img" src="./assets/images/img_morweb_home_slider1.png" alt="tv">
+        <img class="slider_img" src="./assets/images/img_morweb_home_slider2.png" alt="set">
+        <img class="slider_img" src="./assets/images/img_morweb_home_slider3.png" alt="car">
+        <img class="slider_img" src="./assets/images/img_morweb_home_slider4.png" alt="set">
+        <div data-src="../g0522izker4.mp4" class="lb-news-title ellipsis m-video" title="演示视频">
+          <div>
+            演示视频
+          </div>
+          <div class="lb-news-img">
+          </div>
+        </div>
+        <div class="lb-news-mouse">
+          <div class="lb-news-mouse-line"></div>
+        </div>
+        <div class="pagination"></div>
+      </div>
+      <div class="swiper-wrapper swiper-lists">
+        <!-- 第1张图 -->
+
+        <div class="swiper-slide swiper-item clearfix">
+          <!-- <img src="./assets/images/bg_morweb_home.png" class="lb-img"> -->
+          <div class="lb-img lb-img-div">
+
+          </div>
+          <div class="slide-bottom-waper">
+            <img src="./assets/images/slogan_morweb_home_poweredbymor.png" alt="" class="lb-logo">
+            <img src="./assets/images/slogan_morweb_home_moranrenzhi.png" alt="" class="lb-logo1">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  
+  <div class="main-content">
+    <!-- 核心技术 -->
+    <div class="core-out">
+      <div class="wearefriend">
+        <a href="./technology.html">
+          <h1 class="white" style="margin: 70px 0 30px 0;"> 核心技术</h1>
+        </a>  
+      </div>
+      <h2 style="text-align: center;font-size: 18px;font-weight:normal;margin-bottom: 50px;">专注于认知计算和自然语言理解技术，提供更高效便捷的智能语音交互体验及服务。</h2>
+      <div class="core-in">
+        <div class="core_technology">
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- 对话平台及解决方案 -->
+    <div class="plan">
+      <!--对话平台与大脑方案-->
+      <div class="talk-and-brain">
+        <div class="title">
+          <div class="wearefriend">
+            <a href="./talk_platform.html">
+              <h1 class="white" style="margin: 70px 0 30px 0;">对话服务平台</h1>
+            </a>
+          </div>
+          <h2 style="text-align: center;font-size: 18px;font-weight:normal;margin-bottom: 50px;">让机器帮助用户搜索和消费服务。</h2>
+        </div>
+        <a href="./talk_platform.html">
+         <img src="./assets/home_page/img_home_talk.png">
+        </a>
+      </div>
+      <div class="talk-and-brain" style="background-color: rgb(247,247,247);">
+        <div class="title">
+          <div class="wearefriend">
+            <h1 class="white" style="margin: 70px 0 30px 0">大脑方案</h1>
+          </div>
+          <h2 style="text-align: center;font-size: 18px;font-weight:normal;margin-bottom: 50px;">提供可私有化部署的服务接入控制和用户需求分析平台，为企业构建统一云端业务中台。</h2>
+        </div>
+        <a href="./ai+.html">
+          <img src="./assets//home_page/img_home_brain.png">
+        </a>
+      </div>
+
+      <!--设备方案和行业方案-->
+      <div class="resolution" style="background-color: #fff;">
+        <div class="title">
+          <div class="wearefriend">
+            <h1 class="white" style="margin: 70px 0 30px 0;">设备方案</h1>
+          </div>
+          <h2 style="text-align: center;font-size: 18px;font-weight:normal;margin-bottom: 50px;">对话服务平台赋能智能硬件，构建智能硬件服务生态。</h2>
+        </div>
+        <div class="resolution-img">
+          <div class="resolution-img-item">
+            <div>智能音箱</div>
+            <a href=./speaker.html><img src="./assets/home_page/img_home_equi_video.png"></a>
+          </div>
+          <div class="resolution-img-item">
+            <div>智能车机</div>
+            <a href="./car_machine.html"><img src="./assets/home_page//img_home_equi_car.png"></a>
+          </div>
+          <div class="resolution-img-item">
+            <div>智能电视</div>
+            <a href="./smart_tv.html"><img src="./assets/home_page/img_home_equi_tv.png"></a>
+          </div>
+          <div class="resolution-img-item">
+            <div>智能耳机</div>
+            <a href="./head_phone.html"><img src="./assets/home_page/img_home_equi_ears.png"></a>
+          </div>    
+        </div>
+        <div class="know-more"><a href="./robot.html"><span>了解更多</span></a></div>
+      </div>
+      <div class="resolution">
+        <div class="title">
+          <div class="wearefriend">
+            <h1 class="white" style="margin: 70px 0 30px 0;">行业方案</h1>
+          </div>
+          <h2 style="text-align: center;font-size: 18px;font-weight:normal;margin-bottom: 50px;">对话服务平台赋能不同行业，提供完整行业解决方案。</h2>
+        </div>
+        <div class="resolution-img" id="industry">
+              <div class="resolution-img-item" >
+                <div>车家互联</div>
+                <a href="./car_home.html"><img src="./assets/home_page/img_home_work_carhome.png"></a>
+              </div>
+              <div class="resolution-img-item">
+                <div>汽车售前</div>
+                <a href="./car_beforesell.html"><img src="./assets/home_page//img_home_work_car.png"></a>
+              </div>
+              <div class="resolution-img-item">
+                <div>智能家居</div>
+                <a href="./home_life.html"><img src="./assets/home_page/img_home_work_home.png"></a>
+              </div>
+              <div class="resolution-img-item">
+                <div>智能酒店</div>
+                <a href="./hotel.html"><img src="./assets/home_page/img_home_work_hotel.png"></a>
+              </div>    
+        </div>
+        <div class="know-more"><a href="./community.html"><span>了解更多</span></a></div>
+      </div>
+
+    </div>
+
+    <!-- 合作伙伴/成功案例 -->
+    <div class="wearefriend" style="background-color: #fff;">
+      <h1 class="white"style="margin: 70px 0 30px 0;" >成功案例</h1>
+      <h2 style="text-align: center;font-size: 18px;font-weight:normal;margin-bottom: 50px;">蓦然认知合作案例展示</h2>
+      <div class="brands">
+        <div class="brands-container">
+        <img src="./assets/new_icon/ic_home_logo_1.png">
+        <img src="./assets/new_icon/ic_home_logo_2.png">
+        <img src="./assets/new_icon/ic_home_logo_3.png">
+        <img src="./assets/new_icon/ic_home_logo_4.png">
+        <img src="./assets/new_icon/ic_home_logo_5.png">
+        <img src="./assets/new_icon/ic_home_logo_6.png">
+        <img src="./assets/new_icon/ic_home_logo_7.png">
+        <img src="./assets/new_icon/ic_home_logo_8.png">
+        <img src="./assets/new_icon/ic_home_logo_9.png">
+        <img src="./assets/new_icon/ic_home_logo_10.png">
+        </div>
+      </div>
+    </div>
+    <!--公司简介与微信二维码-->
+    <div class="rele-info">
+      <div class="info-text">
+        <h1>蓦然认知，让机器帮助人搜索和消费服务</h1>
+        <p>
+          蓦然认知是对话式服务搜索平台的开创者，致力于让机器帮助人搜索和消费服务；专注于认知计算、自然语言理解，拥有自主的语音交互全栈技术（降噪+语音+语义+多轮对话+知识图谱）。在对话服务平台的基础上，通过构建去APP化的对话应用，以语音交互为主、多模态交互融合的方式来进行服务分发，让设备具有拟人化的交互能力。同时通过场景化运营，帮助客户实现新的商业模式。
+          <br>
+          蓦然认知自主研发的对话机器人可以应用在车机、音箱，电视、耳机等多种硬件设备及汽车、家居、酒店等各个领域。
+          <br>
+        </p>
+        <div class="contact-button">
+          <a href="./contact.html"><span>合作联系</span><a>
+          <a href="./joinus.html"><span>加入我们</span></a>
+        </div>
+      </div>
+
+      <div class="qr-code">
+        <div id="qr-code-1">
+          <img src="./assets/wechat_qrcode.png" alt="微信公众号"  height="150" width="150">
+          <h1>微信订阅号</h1>
+        </div>
+        <div id="qr-code-1">
+          <img src="./assets/wechat-qrcode-service.png" alt="微信服务号" height="150" width="150">
+          <h1>微信服务号</h1>
+        </div>
+      </div>
+    </div>
+    <!--底部ICP备案-->
+    <footer id="footer">
+      北京蓦然认知科技有限公司 © 京ICP备16045349号
+    </footer>
+
+  </div>
+  <!-- loading -->
+  <!-- <div id="loading">
+            <div id="loading-center">
+            <div id="loading-center-absolute">
+                <div class="object" id="object_four"></div>
+                <div class="object" id="object_three"></div>
+                <div class="object" id="object_two"></div>
+                <div class="object" id="object_one"></div>
+            </div>
+        </div> -->
+  </div>
+  <script src="js/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/scroll.js" type="text/javascript" charset="utf-8"></script>
+  <!-- 导航条 -->
+  <script src="js/megamenu.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/swiper-3.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+  <!-- lazyload -->
+  <script src="js/jquery.lazyload.min.js" type="text/javascript" charset="utf-8"></script>
+  <!-- 首页轮播视频插件 -->
+  <script src="js/pingzi_video.js" type="text/javascript" charset="utf-8"></script>
+  <!-- home页base  -->
+  <script src="js/home_basev6.js?v2.0" type="text/javascript" charset="utf-8"></script>
+  <!-- 时间线  -->
+  <script src="js/timeLine.js?v2.0" type="text/javascript" charset="utf-8"></script>
+  <!-- 返回顶部  -->
+  <script src="js/goTotop.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript" src="./js/canvas.js"></script>
+
+  <script>
+    if (!window.name) {
+      var str = Math.random().toString(36).substr(2);
+      //随机字符串 
+      window.location.href += '?S=' + str;
+      //兼容微信浏览器刷新
+      window.name = 'isreload';
+    }
+    $(document).ready(function () {
+      // swiper init
+      setTimeout(function () {
+        var mySwiper = new Swiper('.lb-container', {
+          pagination: '.pagination',
+          loop: false,
+          grabCursor: true,
+          paginationClickable: true,
+          paginationType: 'custom',
+          direction: 'vertical',
+          paginationCustomRender: function (swiper, current, total) {
+            var _html = '';
+            for (var i = 1; i <= total; i++) {
+              if (current == i) {
+                _html += '<li class="swiper-pagination-bullet-active"></li>';
+              } else {
+                _html += '<li class="swiper-pagination-bullet"></li>';
+              }
+            }
+            return _html; //返回所有的页码html
+          }
+        })
+      }, 300)
+      // loading
+      setTimeout(function () {
+        $("#loading").fadeOut(500);
+      }, 1500)
+      $('.arrow-left').on('click', function (e) {
+        e.preventDefault()
+        mySwiper.swipePrev()
+      })
+      $('.arrow-right').on('click', function (e) {
+        e.preventDefault()
+        mySwiper.swipeNext()
+      });
+      // pic特效果
+      // $('.lb-logo,.lb-logo1').attr('style', 'animation:aDirection 1.5s forwards'); class="animated bounceOutLeft"
+      // $('.lb-logo,.lb-logo1').addClass("animated bounce")
+      var resizeLb = function () {
+        $(".lb-container").find(".lb-img").eq(0).height(document.documentElement.clientHeight)
+        $(".lb-container").height($(".lb-container").find(".lb-img").eq(0).height())
+        $('.main-content').attr('style', 'top:' + document.documentElement.clientHeight + 'px')
+
+      }
+      resizeLb()
+      // lazy load
+      $('img.lazy').show().lazyload({
+        effect: "fadeIn"
+      });
+      window.onresize = function () {
+        resizeLb()
+      };
+    })
+  </script>
+  <!--导航栏JS与样式-->
+  <script src="js/nav_v1.js"></script>
+  <script src="js/currency_js.js"></script>
+  <!--首页导航栏透明-->
+  <script>
+    function transparentNav(e){
+      //获取顶部swpier-container的高度
+      var swiperHeight=$('.swiper-container').height();
+      //获取网页被卷上去的高度
+      var scrollHeight=$(document).scrollTop();
+      if(scrollHeight>swiperHeight){
+        $('.header_nav').css({"background-image":'url("./assets/images/product/bg_morweb_morinformation_topnav.png\")'});
+        console.log(swiperHeight,scrollHeight);
+      }else if(scrollHeight<swiperHeight){
+        $('.header_nav').css({"background-image":'none'});
+      }
+    }
+    $(document).scroll(transparentNav);
+    $(document).ready(transparentNav);
+  </script>
+</body>
+
+</html>

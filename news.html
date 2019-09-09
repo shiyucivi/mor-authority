@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+  <meta name="toTop" content="true">
+  <link rel="shortcut icon" href="./assets/imoran.ico" />
+  <meta name="keywords" content="蓦然,蓦然认知,人工智能,智能,认知,自然语言理解,mor,moran,小蓦,小蓦机器人,蓦然认知科技,语音,
+    智能交互,决策,语音交互，echo,alexa,viv,siri,cortana,google now，度秘" />
+  <meta name="description"
+    content="蓦然认知（Moran）是一家以认知计算为核心的人工智能公司，拥有领先的智能交互及决策引擎Mor（又名：小蓦机器人）. Mor可以理解人类语言，并与人自然对话，驱动机器一起为人们提供更加友好和高效的服务。我们相信Mor的持续演将改变人与机器之间的交互方式和信息获取方式，并最终形成全新的互联网入口。" />
+  <title>蓦然认知</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/ionicons.min.css">
+  <link rel="stylesheet" href="css/joinus_basev3.css">
+  <!--导航栏样式-->
+  <link rel="stylesheet" href="css/new_nav_v1.css">
+  <!--底部样式-->
+  <link rel="stylesheet" href="css/footer_info.css">
+
+
+  <style type="text/css">
+    /* 导航跳转 */
+
+    .menu>ul>li:nth-child(4) a {
+      color: #ECAB3B;
+    }
+
+    .menu>ul>li:nth-child(4) {
+      position: relative;
+    }
+
+    .menu>ul>li:nth-child(4):before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -35px;
+      margin-top: 15px;
+      width: 70px;
+      height: 2px;
+      background: #ECAB3B;
+    }
+
+    /* body {
+            width: 100%;
+            height: 100%;
+        } */
+
+    .body_main {
+      width: 90%;
+      height: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .top_router {
+      width: 100%;
+      height: 16px;
+      line-height: 16px;
+      margin: 28px 0px;
+      font-size: 16px;
+    }
+
+    .top_router i {
+      display: inline-block;
+      width: 4px;
+      height: 100%;
+      margin-right: 10px;
+      background-color: #f4b035;
+    }
+
+    .top_router span {
+      display: inline-block;
+      height: 100%;
+    }
+
+    .top_router .router_url {
+      color: #080f18;
+    }
+
+    .top_router .router_last {
+      color: #f4b035;
+    }
+
+    .news_wrap {
+      width: 100%;
+    }
+
+    .news_wrap ul {
+      width: 100%;
+      display: -webkit-flex;
+      /* Safari */
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .news_wrap ul li {
+      width: 31.67%;
+      max-height: 260px;
+      /* height: 100%; */
+      overflow: hidden;
+      box-sizing: border-box;
+      border-bottom: 1px solid #f4b035;
+      margin-bottom: 30px;
+    }
+
+    .news_wrap ul li .news_pic {
+      display: block;
+      width: 100%;
+      /* max-height: 260px; */
+      overflow: hidden;
+    }
+
+    .news_pic img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .news_info {
+      width: 100%;
+      height: 60px;
+      line-height: 60px;
+      position: relative;
+      padding: 0px 16px;
+      font-size: 16px;
+      background-color: #fff;
+    }
+
+    .news_info .news_title {
+      position: absolute;
+      top: 9px;
+      left: 16px;
+      max-width: 230px;
+      overflow: hidden;
+      /* text-overflow: ellipsis;
+            white-space: nowrap; */
+      color: #040419;
+      font-size: 13px;
+      line-height: 20px;
+      /* display: table-cell;
+            vertical-align: middle; */
+    }
+
+    .news_info .news_date {
+      position: absolute;
+      top: 0px;
+      right: 16px;
+      color: #dadadb;
+    }
+
+    #footer {
+      margin-top: 30px;
+    }
+
+
+    /* @media screen and (max-width:640px) {
+            .news_wrap ul li .news_pic {
+                height: 150px;
+            }
+        } */
+
+    @media only screen and (max-width: 959px) {
+      .news_wrap ul {
+        flex-wrap: wrap;
+      }
+
+      .news_wrap ul li {
+        width: 100%;
+      }
+    }
+  </style>
+  
+  
+</head>
+
+<body>
+  <!-- nav -->
+  <header class="header_nav">
+    <a href="index.html"><img src="./assets/images/logo_morweb_home.png" alt=""></a>
+    <div class="header_nav_xf">
+      <ul>
+        <h6 class="clearfix"></h6>
+      </ul>
+      <h6 class="clearfix"></h6>
+      </div>
+      <div class="nav_anniu">
+        <div class="menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    <h6 class="clearfix"></h6>
+  </header>
+
+
+  <!-- banner -->
+  <!-- <div class="banner_main content_max ">
+        <div class="page_cookie">
+            <div class="orangeBox"></div>
+            首页 >
+            <span> 蓦然新闻</span>
+        </div>
+    </div> -->
+  <div class="banner_main content_max ">
+    <div class="page_cookie">
+      <div class="orangeBox"></div>
+      <a href="./index.html">首页 ></a> <span> 公司新闻</span>
+    </div>
+  </div>
+
+  
+  <div class="body_main">
+    <div class="news_wrap">
+      <div class="news_list">
+        <ul>
+          <li>
+            <a href="https://m.gasgoo.com/news/70114856.html" target="_blank">
+              <div class="news_pic">
+                <img src="./assets/imgs/news/古德伍德.png" alt="Mor.AI x what3words: Empower Onboard Voice LBS Services">
+              </div>
+              <div class="news_info">
+                <span class="news_title">蓦然认知：古德伍德速度节上的科技力量</span>
+                <span class="news_date"> 2019-7-9 8:07:57
+                </span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.leiphone.com/news/201906/7xyDPC4UMNXFTisv.html?viewType=weixin" target="_blank">
+              <div class="news_pic">
+                <img src="./assets/imgs/news/百灵声学.png" alt="Mor.AI x what3words: Empower Onboard Voice LBS Services">
+              </div>
+              <div class="news_info">
+                <span class="news_title">无线耳机也可以语音购物了，蓦然认知助力百灵声学</span>
+                <span class="news_date">2019-06-21 11:41
+
+                </span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.leiphone.com/news/201906/ZAj5uF4X6SVIHQ6r.html?from=timeline&isappinstalled=0&viewType=weixin"
+              target="_blank">
+              <div class="news_pic">
+                <img src="./assets/imgs/news/奔驰定电影票.png" alt="Mor.AI x what3words: Empower Onboard Voice LBS Services">
+              </div>
+              <div class="news_info">
+                <span class="news_title">蓦然认知牵手奔驰：将为其提供语音购买电影票技术支持</span>
+                <span class="news_date">2019-06-11 10:15
+                </span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="http://autonews.gasgoo.com/m/Detail/70015853.html?from=singlemessage&isappinstalled=0"
+              target="_blank">
+              <div class="news_pic">
+                <img src="./assets/imgs/news/新闻3.png" alt="Mor.AI x what3words: Empower Onboard Voice LBS Services">
+              </div>
+              <div class="news_info">
+                <span class="news_title">Mor.AI x what3words: Empower Onboard Voice LBS Services</span>
+                <span class="news_date">2019-04-18</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://m.gasgoo.com/news/70100328.html" target="_blank">
+              <div class="news_pic">
+                <img src="./assets/imgs/news/新闻2.jpg" alt="蓦然认知牵手三词地址亮相上海车展">
+              </div>
+              <div class="news_info">
+                <span class="news_title">蓦然认知牵手三词地址亮相上海车展</span>
+                <span class="news_date">2019-04-18</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://what3words.com/2019/04/mor-ai-integrates-what3words-into-speech-and-lbs-technology/"
+              target="_blank">
+              <div class="news_pic">
+                <img src="./assets/imgs/news/新闻1.jpg"
+                  alt="British company what3words Announced Partnership with Mor.AI">
+              </div>
+              <div class="news_info">
+                <span class="news_title">British company what3words Announced Partnership with Mor.AI</span>
+                <span class="news_date">2019-04-16</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.leiphone.com/news/201903/CKoxIEWOe8BrM82U.html" target="_blank">
+              <div class="news_pic">
+                <img src="./assets/imgs/news/2019-03-25.jpg" alt="Vivo智能助手新增“语音购”服务，手机行业进入新赛道">
+              </div>
+              <div class="news_info">
+                <span class="news_title">Vivo智能助手新增“语音购”服务，手机行业进入新赛道</span>
+                <span class="news_date">2019-03-25</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://36kr.com/p/5169015.html" target="_blank">
+              <div class="news_pic">
+                <img src="./assets/imgs/news/boss.jpeg" alt="蓦然认知发布车载OS：打通技术的各个脉络，全方位构建汽车应用生态">
+              </div>
+              <div class="news_info">
+                <span class="news_title">新经济NEO100 | 戴帅湘：未来AI将从汽车智能化开始普及</span>
+                <span class="news_date">2018-12-25</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://mp.weixin.qq.com/s/oRsE9gUbFvMeoxT6nOYFng" target="_blank">
+              <div class="news_pic">
+                <img src="./assets/imgs/news/2018-12-10.jpg" alt="蓦然认知发布车载OS：打通技术的各个脉络，全方位构建汽车应用生态">
+              </div>
+              <div class="news_info">
+                <span class="news_title">蓦然认知：对话交互助力未来出行，开拓“围绕用户”的商业新篇章</span>
+                <span class="news_date">2018-12-10</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://mp.weixin.qq.com/s/PHV-ozfdCEF52_yD8VSMrA" target="_blank">
+              <div class="news_pic">
+                <img src="./assets/imgs/news/2018-12-09.jpeg" alt="蓦然认知发布车载OS：打通技术的各个脉络，全方位构建汽车应用生态">
+              </div>
+              <div class="news_info">
+                <span class="news_title">五问要做语音版的 iOS 的蓦然认知，如何打造语音交互应用闭环</span>
+                <span class="news_date">2018-12-09</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://mp.weixin.qq.com/s/foFfr9fLH1cW3RABe8zMkA" target="_blank">
+              <div class="news_pic">
+                <img src="./assets/imgs/news/2018-11-28.jpg" alt="蓦然认知发布车载OS：打通技术的各个脉络，全方位构建汽车应用生态">
+              </div>
+              <div class="news_info">
+                <span class="news_title">蓦然认知发布车载OS：打通技术的各个脉络，全方位构建汽车应用生态</span>
+                <span class="news_date">2018-11-28</span>
+              </div>
+            </a>
+          </li>
+
+
+
+
+          <li>
+            <a href="https://mp.weixin.qq.com/s/5YHO4-seaMhW-pybxJkgqA" target="_blank">
+              <div class="news_pic">
+                <img src="./assets/imgs/news/蓦然认知发布车载OS：打通技术的各个脉络，全方位构建汽车应用生态.png"
+                  alt="蓦然认知发布车载OS：打通技术的各个脉络，全方位构建汽车应用生态">
+              </div>
+              <div class="news_info">
+                <span class="news_title">蓦然认知发布车载OS：打通技术的各个脉络，全方位构建汽车应用生态</span>
+                <span class="news_date">2018-11-12</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a target="_blank"
+              href="http://autonews.gasgoo.com/m/Detail/70015353.html?from=singlemessage&isappinstalled=0">
+              <div class="news_pic">
+                <img src="./assets/imgs/news/A New Generation Connected Car OS Just Released.png"
+                  alt="A New Generation Connected Car OS Just Released">
+              </div>
+              <div class="news_info">
+                <span class="news_title">A New Generation Connected Car OS Just Released</span>
+                <span class="news_date">2018-11-09</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.d1ev.com/carnews/yongche/80412" target="_blank">
+              <div class="news_pic">
+                <img src="./assets/imgs/news/蓦然认知智能车载系统正式亮相：不做技术供应商 要做应用生态缔造者.png"
+                  alt="蓦然认知智能车载系统正式亮相：不做技术供应商 要做应用生态缔造者">
+              </div>
+              <div class="news_info">
+                <span class="news_title">蓦然认知智能车载系统正式亮相：不做技术供应商 要做应用生态缔造者</span>
+                <span class="news_date">2018-11-08</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://36kr.com/p/5158258.html">
+              <div class="news_pic">
+                <img src="./assets/imgs/news/车载系统竞争白热化的当下.png" alt="车载系统竞争白热化的当下">
+              </div>
+              <div class="news_info">
+                <span class="news_title">车载系统竞争激烈，蓦然认知发布智能车机OS，预计年底小批量试产</span>
+                <span class="news_date">2018-10-22</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="http://auto.gasgoo.com/News/2018/10/220915421542I70068584C601.shtml" target="_blank">
+              <div class="news_pic">
+                <img src="./assets/imgs/news/戴帅湘：蓦然认知 语音交互时代应用生态的缔造者.png" alt="戴帅湘：蓦然认知 语音交互时代应用生态的缔造者">
+              </div>
+              <div class="news_info">
+                <span class="news_title">戴帅湘：蓦然认知 语音交互时代应用生态的缔造者</span>
+                <span class="news_date">2018-10-22</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.leiphone.com/news/201810/w3IgBwnbWcFtcgwZ.html" target="_blank">
+              <div class="news_pic">
+                <img src="./assets/imgs/news/蓦然认知：打造智能语音界IOS 构建全新AI服务生态.png" alt="蓦然认知：打造智能语音界IOS 构建全新AI服务生态">
+              </div>
+              <div class="news_info">
+                <span class="news_title">蓦然认知：打造智能语音界IOS 构建全新AI服务生态</span>
+                <span class="news_date">2018-10-09</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.leiphone.com/news/201806/c8CfIW5awmQyyz5L.html" target="_blank">
+              <div class="news_pic">
+                <img src="./assets/imgs/news/继语音服务闭环后.png" alt="蓦然认知团建活动_2018-06-08">
+              </div>
+              <div class="news_info">
+                <span class="news_title">继语音服务闭环后，蓦然认知又重磅推出智能家居IoT解决方案
+                </span>
+                <span class="news_date">2018-06-14</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="http://36kr.com/p/5131528.html" target="_blank">
+              <div class="news_pic">
+                <img src="./assets/imgs/news/汽车真能理解用户想要什么？.png" alt="蓦然认知团建活动_2018-06-08">
+              </div>
+              <div class="news_info">
+                <span class="news_title">汽车真能理解用户想要什么？</span>
+                <span class="news_date">2018-05-02</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a target="_blank"
+              href="https://mp.weixin.qq.com/s?__biz=MzIyNDQ4NDA4NA==&mid=2247484872&idx=1&sn=9e4b2f6f8dc429a24d05e78c5a28119c&chksm=e80f0a53df78834502c6fa182c9d12164911464bab483da4c9f599e1d5358df6d6d3da7a766f#rd">
+              <div class="news_pic">
+                <img src="./assets/imgs/news/康佳携手AI新贵亮相AWE.png" alt="蓦然认知团建活动_2018-06-08">
+              </div>
+              <div class="news_info">
+                <span class="news_title">康佳携手AI新贵亮相AWE</span>
+                <span class="news_date">2018-03-01</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.leiphone.com/news/201803/qFbUfVTpjo0J7oPI.html">
+              <div class="news_pic">
+                <img src="./assets/imgs/news/TCLｘ蓦然认知.png" alt="蓦然认知团建活动_2018-06-08">
+              </div>
+              <div class="news_info">
+                <span class="news_title">TCLｘ蓦然认知</span>
+                <span class="news_date">2018-03-08</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.jiqizhixin.com/articles/2017-12-21-11">
+              <div class="news_pic">
+                <img src="./assets/imgs/news/专访蓦然认知：只有做得重一些，我们才能活下来.png" alt="蓦然认知团建活动_2018-06-08">
+              </div>
+              <div class="news_info">
+                <span class="news_title">专访蓦然认知：只有做得重一些，我们才能活下来</span>
+                <span class="news_date">2017-12-21</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="http://36kr.com/p/5109022.html">
+              <div class="news_pic">
+                <img src="./assets/imgs/news/领跑交互新时代.png" alt="蓦然认知团建活动_2018-06-08">
+              </div>
+              <div class="news_info">
+                <span class="news_title">领跑交互新时代 蓦然认知助力传统产业智能化升级
+                </span>
+                <span class="news_date">2017-12-20</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.leiphone.com/news/201709/5HgytAzt8plYSp9c.html">
+              <div class="news_pic">
+                <img src="./assets/imgs/news/刷脸支付已经来了.png" alt="蓦然认知团建活动_2018-06-08">
+              </div>
+              <div class="news_info">
+                <span class="news_title">刷脸支付已经来了</span>
+                <span class="news_date">2017-09-25</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.leiphone.com/news/201705/KclXsuu3mB72nrWX.html">
+              <div class="news_pic">
+                <img src="./assets/imgs/news/蓦然认知戴帅湘：我曾经想过在百度做到退休.png" alt="蓦然认知团建活动_2018-06-08">
+              </div>
+              <div class="news_info">
+                <span class="news_title">蓦然认知戴帅湘：我曾经想过在百度做到退休</span>
+                <span class="news_date">2017-06-07</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="http://36kr.com/p/5075945.html">
+              <div class="news_pic">
+                <img src="./assets/imgs/news/蓦然认知CEO戴帅湘：AI（爱）让生活更简单.png" alt="蓦然认知团建活动_2018-06-08">
+              </div>
+              <div class="news_info">
+                <span class="news_title">蓦然认知CEO戴帅湘：AI（爱）让生活更简单</span>
+                <span class="news_date">2017-05-21</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.leiphone.com/news/201705/i8SIz7c98J509Xef.html">
+              <div class="news_pic">
+                <img src="./assets/imgs/news/暴风携手蓦然认知推出第一款AI对话交互TV.png" alt="蓦然认知团建活动_2018-06-08">
+              </div>
+              <div class="news_info">
+                <span class="news_title">暴风携手蓦然认知推出第一款AI对话交互TV</span>
+                <span class="news_date">2017-05-11</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://baijiahao.baidu.com/s?id=1566581739083939&wfr=spider&for=pc">
+              <div class="news_pic">
+                <img src="./assets/imgs/news/干货 丨蓦然认知：对话即应用-自然语言交互的挑战及未来.png" alt="蓦然认知团建活动_2018-06-08">
+              </div>
+              <div class="news_info">
+                <span class="news_title">干货 丨蓦然认知：对话即应用-自然语言交互的挑战及未来</span>
+                <span class="news_date">2017-05-06</span>
+              </div>
+            </a>
+          </li>
+
+
+          <li>
+            <a target="_blank" href="https://baijiahao.baidu.com/s?id=1566581739083939&wfr=spider&for=pc">
+              <a href="https://36kr.com/p/5061419.html">
+                <div class="news_pic">
+                  <img src="./assets/imgs/news/蓦然认知完成1000万美元A轮融资.png" alt="蓦然认知团建活动_2018-06-08">
+                </div>
+                <div class="news_info">
+                  <span class="news_title">蓦然认知完成1000万美元A轮融资</span>
+                  <span class="news_date">2017-01-17</span>
+                </div>
+              </a>
+          </li>
+          <li style="visibility:hidden">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <footer id="footer">
+    北京蓦然认知科技有限公司 © 京ICP备16045349号
+  </footer>
+
+</body>
+<script src="js/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/scroll.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/megamenu.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/goTotop.js" type="text/javascript" charset="utf-8"></script>
+<script>
+  $(function () {
+    var articles = $('.news_wrap li')
+    var _url = window.location.href;
+    for (var i = 0; i < articles.length; i++) {
+      console.log($('.news_wrap li').eq(i));
+      // $('.news_wrap li').eq(i).find('a').attr('href', './news_detail.html?p='+articles.length+'&id='+(i+1))
+    }
+  })
+</script>
+<!--导航栏JS与样式-->
+<script src="js/nav_v1.js"></script>
+<script src="js/currency_js.js"></script>
+
+</html>

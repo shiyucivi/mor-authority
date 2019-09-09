@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <meta name="toTop" content="true" />
+    <link rel="shortcut icon" href="./assets/imoran.ico" />
+    <meta
+      name="keywords"
+      content="蓦然,蓦然认知,人工智能,智能,认知,自然语言理解,mor,moran,小蓦,小蓦机器人,蓦然认知科技,语音,
+    智能交互,决策,语音交互，echo,alexa,viv,siri,cortana,google now，度秘"
+    />
+    <meta
+      name="description"
+      content="蓦然认知（Moran）是一家以认知计算为核心的人工智能公司，拥有领先的智能交互及决策引擎Mor（又名：小蓦机器人）. Mor可以理解人类语言，并与人自然对话，驱动机器一起为人们提供更加友好和高效的服务。我们相信Mor的持续演将改变人与机器之间的交互方式和信息获取方式，并最终形成全新的互联网入口。"
+    />
+    <title>蓦然认知</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/ionicons.min.css" />
+    <link rel="stylesheet" href="css/joinus_basev3.css" />
+    <link rel="stylesheet" href="css/product_base.css" />
+
+    <style type="text/css">
+      .product_header .product_header_img {
+        background: url('./assets/imgs/product/img_chanpiin_auto.png') center
+          center no-repeat;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- nav -->
+    <div class="header_main">
+      <div class="logo">
+        <a href="./index.html">
+          <img src="./assets/images/logo_morweb_home.png" alt="logo" />
+        </a>
+      </div>
+      <div class="top-nav">
+        <div class="menu-container">
+          <div class="menu">
+            <ul>
+              <li>
+                <a href="./about.html">关于公司</a>
+              </li>
+              <!--                 <li><a href="#">About</a>
+                                        <ul>
+                                            <li><a href="#">School</a>
+                                                <ul>
+                                                    <li><a href="#">1</a></li>
+                                                    <li><a href="#">2</a></li>
+                                                    <li><a href="#">2</a></li>
+                                                    <li><a href="#">3</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Study</a>
+                                                <ul>
+                                                    <li><a href="#">a</a></li>
+                                                    <li><a href="#">b</a></li>
+                                                    <li><a href="#">c</a></li>
+                                                    <li><a href="#">d</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Research</a>
+                                                <ul>
+                                                    <li><a href="#">a</a></li>
+                                                    <li><a href="#">b</a></li>
+                                                    <li><a href="#">c</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Something</a>
+                                                <ul>
+                                                    <li><a href="#">1</a></li>
+                                                    <li><a href="#">1</a></li>
+                                                    <li><a href="#">3</a></li>
+                                                    <li><a href="#">4</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li> -->
+              <li>
+                <a href="./technology.html">核心技术</a>
+              </li>
+              <li>
+                <a href="#">产品介绍</a>
+                <ul>
+                  <li>
+                    <a href="./product_car.html">MorAuto</a>
+                  </li>
+                  <li>
+                    <a href="./product_tv.html">MorTV</a>
+                  </li>
+                  <li>
+                    <a href="./product_speaker.html">MorSpeaker</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">解决方案</a>
+                <ul>
+                  <li>
+                    <a href="./morAuto.html">智能车载</a>
+                  </li>
+                  <li>
+                    <a href="./morIot.html">智能家居</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="./news.html">蓦然新闻</a>
+              </li>
+              <li>
+                <a href="./joinus.html">加入我们</a>
+              </li>
+              <li>
+                <a href="./contact.html">联系我们</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="body_main">
+      <div class="top_router">
+        <i></i
+        ><span class="router_url router_home" id="router_index"
+          ><a href="./index.html">首页</a
+          >&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;</span
+        ><span class="router_last" id="router_product">MorAuto</span>
+      </div>
+      <div class="product_wrap">
+        <div class="product_header">
+          <div class="product_header_img">
+            <div class="dialog_box">
+              <div class="dialog_min_box">
+                <ul class="dialog_wrap">
+                  <!-- 车主：提醒我明早10点去首都机场T3航站楼接人
+                                    小蓦：好滴，没问题
+                                    （第二天早上8点）
+                                    小蓦：您今天10点要去首都机场接人，全程预计30分钟，建议您9点20分出发
+                                    车主：好的，谢谢小蓦，那儿附近有没有五星级酒店？
+                                    小蓦：有哒，为您找到首都机场附近的五星级酒店……
+
+                                    车主：你好小蓦，导航回家
+                                    小蓦：好的，当快到家时需要帮您打开家里的空调吗？
+                                    车主：好的，同时帮我打开空气净化器
+                                    小蓦：好滴，没问题！ -->
+
+                  <li class="dialog_li user">
+                    <i></i>
+                    <p>提醒我明早10点去首都机场T3航站楼接人</p>
+                  </li>
+                  <li class="dialog_li mor">
+                    <i></i>
+                    <p>好滴，没问题</p>
+                  </li>
+                  <li class="date_tip">次日 8:00 am</li>
+                  <li class="dialog_li mor">
+                    <i></i>
+                    <p>
+                      您今天10点要去首都机场接人，全程预计30分钟，建议您9点20分出发
+                    </p>
+                  </li>
+                  <li class="dialog_li user">
+                    <i></i>
+                    <p>好的，谢谢小蓦，那儿附近有没有五星级酒店？</p>
+                  </li>
+                  <li class="dialog_li mor">
+                    <i></i>
+                    <p>有哒，为您找到首都机场附近的五星级酒店……</p>
+                  </li>
+                  <li class="dialog_li user">
+                    <i></i>
+                    <p>你好小蓦，导航回家</p>
+                  </li>
+                  <li class="dialog_li mor">
+                    <i></i>
+                    <p>好的，当快到家时需要帮您打开家里的空调吗？</p>
+                  </li>
+                  <li class="dialog_li user">
+                    <i></i>
+                    <p>好的，同时帮我打开空气净化器</p>
+                  </li>
+                  <li class="dialog_li mor">
+                    <i></i>
+                    <p>好滴，没问题！</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="product_desc">
+            <h2>MorAuto 智能车机系统</h2>
+            <p>
+              MorAuto车载OS系统，针对车联网场景一体化整合了降噪、语音、对话、图像、大数据等方面的核心AI能力；基于组件化设计、标准SDK接口定义以及应用层开源的解决方案，极大降低主机厂、Tier1产品差异化的实施成本；ROM级适配充分挖掘不同硬件平台的性能极限，为用户提供流畅的多模交互体验。
+            </p>
+          </div>
+        </div>
+        <div class="product_main">
+          <div class="product_service">
+            <h3 class="product_title"><i></i><span>功能服务</span><i></i></h3>
+            <ul>
+              <li class="product_tab">
+                <div class="tab_img">
+                  <img
+                    src="./assets/images/product/ic_morweb_secondpage_productionunstruction_live.png"
+                    alt="speechunderstand1"
+                  />
+                </div>
+                <span class="tab_name">生活服务</span>
+              </li>
+              <li class="product_tab">
+                <div class="tab_img">
+                  <img
+                    src="./assets/images/product/ic_morweb_secondpage_productionunstruction_car.png"
+                    alt="speechunderstand1"
+                  />
+                </div>
+                <span class="tab_name">车辆控制</span>
+              </li>
+              <li class="product_tab">
+                <div class="tab_img">
+                  <img
+                    src="./assets/images/product/ic_morweb_secondpage_productionunstruction_search.png"
+                    alt="speechunderstand1"
+                  />
+                </div>
+                <span class="tab_name">智能搜索</span>
+              </li>
+              <li class="product_tab">
+                <div class="tab_img">
+                  <img
+                    src="./assets/images/product/ic_morweb_secondpage_productionunstruction_nav.png"
+                    alt="speechunderstand1"
+                  />
+                </div>
+                <span class="tab_name">车载导航</span>
+              </li>
+              <li class="product_tab">
+                <div class="tab_img">
+                  <img
+                    src="./assets/images/product/ic_morweb_secondpage_productionunstruction_recommend.png"
+                    alt="speechunderstand1"
+                  />
+                </div>
+                <span class="tab_name">主动推荐</span>
+              </li>
+              <li class="product_tab">
+                <div class="tab_img">
+                  <img
+                    src="./assets/images/product/ic_morweb_secondpage_productionunstruction_chat.png"
+                    alt="speechunderstand1"
+                  />
+                </div>
+                <span class="tab_name">智能聊天</span>
+              </li>
+              <li class="product_tab">
+                <div class="tab_img">
+                  <img
+                    src="./assets/images/product/ic_morweb_secondpage_productionunstruction_happy.png"
+                    alt="speechunderstand1"
+                  />
+                </div>
+                <span class="tab_name">车载娱乐</span>
+              </li>
+              <li class="product_tab">
+                <div class="tab_img">
+                  <img
+                    src="./assets/images/product/ic_morweb_secondpage_productionunstruction_communication.png"
+                    alt="speechunderstand1"
+                  />
+                </div>
+                <span class="tab_name">车内通讯</span>
+              </li>
+              <li class="product_tab">
+                <div class="tab_img">
+                  <img
+                    src="./assets/images/product/ic_morweb_secondpage_productionunstruction_check.png"
+                    alt="speechunderstand1"
+                  />
+                </div>
+                <span class="tab_name">车况显示</span>
+              </li>
+              <li class="product_tab">
+                <div class="tab_img">
+                  <img
+                    src="./assets/images/product/ic_morweb_secondpage_productionunstruction_safe.png"
+                    alt="speechunderstand1"
+                  />
+                </div>
+                <span class="tab_name">安全辅助</span>
+              </li>
+            </ul>
+          </div>
+          <div class="product_advantage">
+            <h3 class="product_title"><i></i><span>我们的优势</span><i></i></h3>
+            <ul class="advantage_col3">
+              <li class="advantage_tab_col3">
+                <div>
+                  <img
+                    src="./assets/imgs/product/img_chanpiin_auto1.png"
+                    alt=""
+                  />
+                </div>
+                <span>车内降噪</span>
+              </li>
+              <li class="advantage_tab_col3">
+                <div>
+                  <img
+                    src="./assets/imgs/product/img_chanpiin_auto2.png"
+                    alt=""
+                  />
+                </div>
+                <span>语音交互</span>
+              </li>
+              <li class="advantage_tab_col3">
+                <div>
+                  <img
+                    src="./assets/imgs/product/img_chanpiin_auto3.png"
+                    alt=""
+                  />
+                </div>
+                <span>CP/SP/TSP全链路深度整合</span>
+              </li>
+            </ul>
+            <ul class="advantage_col4">
+              <li class="advantage_tab_col4">
+                <div>
+                  <img
+                    src="./assets/imgs/product/img_chanpiin_auto4.png"
+                    alt=""
+                  />
+                </div>
+                <span>多生活服务</span>
+              </li>
+              <li class="advantage_tab_col4">
+                <div>
+                  <img
+                    src="./assets/imgs/product/img_chanpiin_auto5.png"
+                    alt=""
+                  />
+                </div>
+                <span>多模态交互</span>
+              </li>
+              <li class="advantage_tab_col4">
+                <div>
+                  <img
+                    src="./assets/imgs/product/img_chanpiin_auto6.png"
+                    alt=""
+                  />
+                </div>
+                <span>智能决策</span>
+              </li>
+              <li class="advantage_tab_col4">
+                <div>
+                  <img
+                    src="./assets/imgs/product/img_chanpiin_auto7.png"
+                    alt=""
+                  />
+                </div>
+                <span>主动对话</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer id="footer">
+      北京蓦然认知科技有限公司 © 京ICP备16045349号
+    </footer>
+  </body>
+  <script
+    src="js/jquery-1.11.0.min.js"
+    type="text/javascript"
+    charset="utf-8"
+  ></script>
+  <script src="js/scroll.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/megamenu.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/goTotop.js" type="text/javascript" charset="utf-8"></script>
+  <script>
+    $(function() {
+      var len = $('.dialog_wrap li').length
+      var i = 0
+      var offsetTop = ''
+      var timer = null //对话播放定时
+      var timer2 = null // 对话整体轮播时间间隔
+      // $('.dialog_wrap li').css('visibility', 'visible');
+
+      function dialogAutoplay() {
+        $('.dialog_wrap li').css({ visibility: 'hidden', opacity: 0 })
+        $('.dialog_wrap').css({ top: '10px' })
+        clearInterval(timer2)
+        timer = setInterval(function() {
+          i++
+          if (i > 4) {
+            offsetTop = -(52 * (i - 4)) + 'px'
+            $('.dialog_wrap').css('top', offsetTop)
+          }
+          $('.dialog_wrap li')
+            .eq(i - 1)
+            .css({ visibility: 'visible' })
+          $('.dialog_wrap li')
+            .eq(i - 1)
+            .animate({ opacity: 1 }, 1000)
+
+          if (i >= len + 1) {
+            clearInterval(timer)
+            // $('.dialog_wrap li').css({'visibility': 'hidden', 'opacity': 0});
+            // $('.dialog_wrap').css({'top': '10px'});
+            i = 0
+            timer2 = setInterval(dialogAutoplay, 5000)
+          }
+        }, 1300)
+      }
+
+      dialogAutoplay()
+    })
+  </script>
+</html>

@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+  <meta name="toTop" content="true">
+  <link rel="shortcut icon" href="./assets/imoran.ico" />
+  <meta name="keywords" content="蓦然,蓦然认知,人工智能,智能,认知,自然语言理解,mor,moran,小蓦,小蓦机器人,蓦然认知科技,语音,
+    智能交互,决策,语音交互，echo,alexa,viv,siri,cortana,google now，度秘" />
+  <meta name="description"
+    content="蓦然认知（Moran）是一家以认知计算为核心的人工智能公司，拥有领先的智能交互及决策引擎Mor（又名：小蓦机器人）. Mor可以理解人类语言，并与人自然对话，驱动机器一起为人们提供更加友好和高效的服务。我们相信Mor的持续演将改变人与机器之间的交互方式和信息获取方式，并最终形成全新的互联网入口。" />
+  <title>蓦然认知</title>
+
+  <link rel="stylesheet" href="css/ionicons.min.css">
+  <link rel="stylesheet" href="css/joinus_basev3.css">
+  <link rel="stylesheet" type="text/css" href="css/home_basev3.css">
+  <link rel="stylesheet" type="text/css" href="css/morAuto_basev1.css">
+  <link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css">
+  <!-- 时间线 -->
+  <link rel="stylesheet" type="text/css" href="css/timeLine.css">
+  <!--对话平台样式-->
+  <link rel="stylesheet" type="text/css" href="css/talk_platform_v1.css">
+  
+  <!--导航栏样式-->  
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/new_nav_v1.css">
+  
+  <link rel="stylesheet" href="css/footer_info.css">
+  <!--底部商标展示-->
+  <link rel="stylesheet" href="css/cooperative-brands.css">
+  <style>
+    
+    .menu>ul>li:nth-child(2)>a {
+      color: #ECAB3B;
+    }
+
+    .menu>ul>li:nth-child(2) {
+      position: relative;
+    }
+
+    .menu>ul>li:nth-child(2):after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -35px;
+      margin-top: 15px;
+      width: 70px;
+      height: 2px;
+      background: #ECAB3B;
+    }
+
+    .compony_content p {
+      padding-bottom: 20px;
+    }
+
+    .compony_content_img {
+      /* max-width: 559px;
+        min-height: 753px;
+        padding: 13.77% 14.13% 0; */
+      background: url('./assets/images/pro_apply/img_product_talk.png') no-repeat;
+      background-size: 100% auto;
+      background-attachment: local;
+      max-height: 350px;
+      box-sizing: border-box;
+      position: relative;
+    }
+
+    .swiper-container {
+      position: absolute;
+      width: 31%;
+      height: 57%;
+      left: 54%;
+      top: 30%;
+      /* background: url('./assets/images/new/img_product_hello.png'); */
+      color: #fff;
+    }
+
+    .swiper-pagination {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+    }
+
+    .swiper-pagination-customs {
+      width: 20px;
+      height: 20px;
+      background: url('./assets/images/new/ic_product_talk_change12.png') no-repeat;
+    }
+
+    .active {
+      width: 40px;
+      height: 20px;
+      background: url('./assets/images/new/ic_product_talk_change1.png') no-repeat;
+
+    }
+
+    .quotes {
+      width: auto !important;
+      height: 100% !important;
+    }
+
+    /* .swiper-slide{
+          padding-left: 100px;
+          padding-top: 62px;
+        } */
+
+    .swiper-slide>h1 {
+      color: #fff;
+      height: 40px;
+      display: inline-flex;
+      width: 100%;
+      flex-direction: row;
+    }
+
+    .swiper-slide>h2 {
+      color: #fff;
+      height: 30px;
+      font-size: 28px;
+      line-height: 30px;
+      display: inline-flex;
+      width: 100%;
+      flex-direction: row;
+      margin-top: 10px;
+      margin-bottom: 18px;
+
+      font-weight: 300;
+    }
+
+    .swiper-slide>h3 {
+      color: #fff;
+      height: 24px;
+      font-size: 20px;
+      line-height: 24px;
+      display: inline-flex;
+      width: 100%;
+      flex-direction: row;
+      font-weight: 300;
+    }
+
+    @media (max-width: 1200px) {
+      .swiper-slide>h1 {
+        height: 30px;
+      }
+
+      .swiper-slide>h2 {
+        height: 20px;
+        font-size: 18px;
+        line-height: 20px;
+      }
+
+      .swiper-slide>h3 {
+        height: 14px;
+        font-size: 12px;
+        line-height: 14px;
+      }
+
+    }
+
+    @media (max-width: 750px) {
+      .swiper-container {
+        position: absolute;
+        transform: scale(.7);
+        left: 52%;
+        top: 20%;
+      }
+
+      .swiper-slide>h1 {
+        height: 10px;
+      }
+
+      .swiper-slide>h2 {
+        height: 12px;
+        font-size: 12px;
+        line-height: 12px;
+        margin: 2px 0;
+      }
+
+      .swiper-slide>h3 {
+        height: 12px;
+        font-size: 12px;
+        line-height: 12px;
+      }
+      
+    }
+    /*对话平台页面内容移动端适配*/
+    @media(max-width: 1081px){
+      
+      .talk-tech .center-control .center-control-text{
+        width:100%;
+        margin: 0;
+        margin-bottom: 40px;
+      }
+      .talk-tech .center-control .voice-and-semantic{
+        display: flex;
+        flex-direction: column;
+        margin-left:0;
+        margin-right:0; 
+      }
+      .talk-tech .center-control .voice-and-semantic .voice, .talk-tech .center-control .voice-and-semantic .semantic{
+        height:200px;
+        margin-bottom: 20px;
+      }
+      .voice-and-semantic .voice>img,.voice-and-semantic .semantic>img{
+        width:410px;
+        height:200px;
+      }
+      .talk-tech .center-control .voice-and-semantic .voice div:nth-child(1), .talk-tech .center-control .voice-and-semantic .semantic div:nth-child(1){
+        width:410px;
+      }
+      .talk-tech .center-control .voice-and-semantic .voice .icons img, .talk-tech .center-control .voice-and-semantic .semantic .icons img{
+        margin:30px;
+        width:70px;height:70px;
+      }
+      .talk-tech .center-control .voice-and-semantic .voice .icons, .talk-tech .center-control .voice-and-semantic .semantic .icons{
+        transform: translate(0,-150px);
+      }
+      .talk-tech .center-control .voice-and-semantic .voice .icons-title, .talk-tech .center-control .voice-and-semantic .semantic .icons-title{
+        width:410px;
+        font-size:16px;
+        transform: translate(-10px,-180px);
+      }
+      .talk-tech .center-control .voice-and-semantic .voice .icons-title span{
+        margin:40px;
+      }
+      .small-program .title{
+        margin-bottom: 40px;
+      }
+      .talk-tech .small-program-icons>span{
+        margin:0;
+        font-size:12px;
+      }
+      .small-program>img{
+        width:410px;
+      }
+      .small-program .c-s{
+        display:flex;
+        flex-direction: column;
+      }
+      .small-program .c-s .client{
+        width:100%;
+      }
+      .small-program .c-s .cloud{
+        width:100%;
+      }
+    }
+  </style>
+</head>
+<style>
+</style>
+
+<body>
+  <!--Nav-->
+  <header class="header_nav">
+    <a href="index.html"><img src="./assets/images/logo_morweb_home.png" alt=""></a>
+    <div class="header_nav_xf">
+      <ul>
+        <h6 class="clearfix"></h6>
+      </ul>
+      <h6 class="clearfix"></h6>
+    </div>
+    <div class="nav_anniu">
+      <div class="menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+  <!-- banner -->
+  <div class="banner_main content_max ">
+    <div class="page_cookie">
+      <div class="orangeBox"></div>
+      <a href="./index.html">首页&nbsp;</a>>
+      <span> 对话服务平台</span>
+    </div>
+  </div>
+  <!-- 核心技术 -->
+  <!-- <div class="main-content1 "> -->
+  <div class="compony_content content_max whiteBack">
+    <div class="compony_content_img">
+      <img style="height:auto;width:100%" src="./assets/talk_platform/img_talk_banner.png" alt="">
+    </div>
+    <p>
+        蓦然认知对话式服务搜索平台，简称对话服务平台，致力于<b>「让机器帮助用户搜索和消费服务」</b>。不仅可以以对话的方式帮助用户快速找到所需的服务，还可以在对话过程中完成服务的各个环节，比如下单，购买等，真正实现“对话即应用”、“对话即服务”。对话平台由“对话中控”和“对话小程序”两部分组成，对话中控是集信号处理、唤醒、语音识别和意图识别为一体的，以语音交互为中心并融合其他交互方式的多模态中控框架，用来赋能设备使其具有远场交互和用户意图判别的能力。对话小程序则是标准化的对话应用，无需本地安装，随叫随到，包括服务搜索和服务消费两个环节，以轻量级的方式部署在客户的设备中，自动适配，让设备能够方便地链接消费者与服务，实现服务分发的目的。
+    </p>
+  </div>
+
+
+  <!--对话中控-->
+  <div class="talk-tech">
+    <div class="title">
+      <div class="wearefriend">
+        <h1 class="white" style="margin: 70px 0 30px 0;">对话中控</h1>
+      </div>
+      <p style="text-align: center;font-size: 18px;font-weight:normal;margin-bottom: 50px;">多模态对话交互框架</p>
+    </div>
+    <div class="center-control">
+
+      <div style="display: flex;justify-content:center;">
+      <div class="center-control-text">
+        <div class="center-control-item">
+          <img src="./assets/talk_platform/ic_talk_control_icon1.png">
+          <h2>信号处理</h2>
+          <h3>麦克风阵列<br>波束形成<br>回声消除<br>声源定位</h3>
+        </div>
+        <div class="center-control-item">
+          <img src="./assets/talk_platform/ic_talk_control_icon2.png">
+          <h2>离线识别</h2>
+          <h3>端点检测<br>语音唤醒<br>离线命令词<br>离线语音识别</h3>
+        </div>
+        <div class="center-control-item">
+          <img src="./assets/talk_platform/ic_talk_control_icon3.png">
+          <h2>在线识别</h2>
+          <h3>通用语音识别<br>车载语音识别<br>远场语音识别<br>声纹识别<br>情绪识别</h3>
+        </div>
+        <div class="center-control-item">
+          <img src="./assets/talk_platform/ic_talk_control_icon4.png">
+          <h2>意图识别</h2>
+          <h3>意图分类<br>意图分发</h3>
+        </div>
+      </div>
+      </div>
+      
+      
+    
+      <!--语音和语义-->
+      <div style="display: flex;justify-content:center;">
+      <div class="voice-and-semantic">
+        <div class="voice">
+          <div style="letter-spacing: 40px;">语音</div>
+          <img src="assets/talk_platform/bg_talk_voice.png">
+          <div class="icons">
+            <img src="./assets/talk_platform/ic_talk_voice_1.png">
+            <img src="./assets/talk_platform/ic_talk_voice_2.png">
+            <img src="./assets/talk_platform/ic_talk_voice_3.png">
+          </div>
+          <div class="icons-title"><span>信号处理</span><span>唤醒</span><span>在线识别</span></div>
+        </div>
+        <div class="semantic">
+          <div style="letter-spacing: 40px;">语义</div>
+          <img src="assets/talk_platform/bg_talk_voiceknow.png">
+          <div class="icons">
+            <img src="./assets/talk_platform/ic_talk_voicekonw_1.png">
+            <img src="./assets/talk_platform/ic_talk_voicekonw_2.png">
+            <img src="./assets/talk_platform/ic_talk_voicekonw_3.png">
+          </div>
+          <div class="icons-title"><span>高效灵活的搜索</span><span>场景化的技能覆盖</span><span>自然的多轮对话</span></div>
+        </div>
+      </div>
+      </div>
+      
+      
+
+    </div>
+    </div>
+
+  <!--对话小程序-->
+  <div class="talk-tech small-program">
+    <div class="title">
+      <div class="wearefriend">
+        <h1 class="white" style="margin: 70px 0 30px 0;">对话小程序</h1>
+      </div>
+      <p style="text-align: center;font-size: 18px;font-weight:normal;margin-bottom: 50px;">标准化的对话应用</p>
+    </div>
+
+    <div style="display: flex;justify-content:center;">
+    <div class="small-program-icons">
+      <span>
+        <img src="assets/talk_platform/ic_talk_smallpro_hotel.png"><span>酒店搜索</span>
+      </span>
+      <span>
+        <img src="assets/talk_platform/ic_talk_smallpro_airticket.png"><span>飞机票</span>
+      </span>
+      <span>
+        <img src="assets/talk_platform/ic_talk_smallpro_movie.png"><span>电影票</span>
+      </span>
+      <span>
+        <img src="assets/talk_platform/ic_talk_smallpro_poi.png"><span>POI查询</span>
+      </span>
+      <span>
+        <img src="assets/talk_platform/ic_talk_smallpro_information.png"><span>新闻</span>
+      </span>
+      <span>
+        <img src="assets/talk_platform/ic_talk_smallpro_takeout.png"><span>外卖</span>
+      </span>
+    </div>
+    </div>
+    
+    <img src="assets/talk_platform/img_talk_smallpro.png">
+
+    <div style="display: flex;justify-content:center;">
+    <div class="c-s">
+      <div class="client">
+        <h2>终端</h2>
+        <div class="client-items">
+          <div>
+            <img src="assets/talk_platform/ic_talk_smallpro_end_easy.png">
+            <p>简洁易用</p>
+          </div>
+          <div>
+            <img src="assets/talk_platform/ic_talk_smallpro_end_stand.png">
+            <p>标准化</p>
+          </div>
+          <div>
+            <img src="assets/talk_platform/ic_talk_smallpro_end_flexible.png">
+            <p>灵活部署</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cloud">
+        <h2>云端</h2>
+        <div class="cloud-items">
+          <div>
+            <img src="assets/talk_platform/ic_talk_smallpro_end_service.png">
+            <p>内容与服务生态</p>
+          </div>
+          <div>
+            <img src="assets/talk_platform/ic_talk_smallpro_end_knowlegle.png">
+            <p>知识图谱</p>
+          </div>
+          <div>
+            <img src="assets/talk_platform/ic_talk_smallpro_end_talk.png">
+            <p>对话算法</p>
+          </div>
+          <div>
+            <img src="assets/talk_platform/ic_talk_smallpro_end_bigdata.png">
+            <p>大数据平台</p>
+          </div>
+      </div>
+    </div>
+    
+      
+      
+    </div>
+
+  </div>
+  </div>
+  
+  <!--部分生态合作伙伴 -->
+  <div class="wearefriend">
+    <h1 class="white" style="margin: 70px 0 30px 0;">部分生态合作伙伴</h1>
+    <div class="brands">
+      <div class="brands-container">
+        <img src="./assets/new_icon/icons2/ic_talk_conpany_logo1.png">
+        <img src="./assets/new_icon/icons2/ic_talk_conpany_logo2.png">
+        <img src="./assets/new_icon/icons2/ic_talk_conpany_logo4.png">
+        <img src="./assets/new_icon/icons2/ic_talk_conpany_logo5.png">
+        <img src="./assets/new_icon/icons2/ic_talk_conpany_logo6.png">
+        <img src="./assets/new_icon/icons2/ic_talk_conpany_logo7.png">
+        <img src="./assets/new_icon/icons2/ic_talk_conpany_logo8.png">
+        <img src="./assets/new_icon/icons2/ic_talk_conpany_logo9.png">
+        <img src="./assets/new_icon/icons2/ic_talk_conpany_logo10.png">
+        <img src="./assets/new_icon/icons2/ic_talk_conpany_logo11.png">
+        <img src="./assets/new_icon/icons2/ic_talk_conpany_logo12.png">
+        <img src="./assets/new_icon/icons2/ic_talk_conpany_logo13.png">
+        <img src="./assets/new_icon/icons2/ic_talk_conpany_logo14.png">
+        <img src="./assets/new_icon/icons2/ic_talk_conpany_logo15.png">
+        <img src="./assets/new_icon/icons2/ic_talk_conpany_logo16.png">
+        <img src="./assets/new_icon/icons2/ic_talk_conpany_logo17.png">
+        <img src="./assets/new_icon/icons2/ic_talk_conpany_logo18.png">
+        <img src="./assets/new_icon/icons2/ic_talk_conpany_logo19.png">
+        <img src="./assets/new_icon/icons2/ic_talk_conpany_logo20.png">
+        <img src="./assets/new_icon/icons2/ic_talk_conpany_logo21.png">
+        <img src="./assets/new_icon/icons2/ic_talk_conpany_logo22.png">
+        <img src="./assets/new_icon/icons2/ic_talk_conpany_logo23.png">
+        <img src="./assets/new_icon/icons2/ic_talk_conpany_logo24.png">
+        <img src="./assets/new_icon/icons2/ic_talk_conpany_logo25.png">
+        <div style="height: 70px;width: 160px;margin:20px 30px;"></div>
+      </div>
+    </div>
+  </div>
+
+  <!--公司简介与二维码-->
+  <div class="rele-info">
+    <div class="info-text">
+      <h1>蓦然认知，让机器帮助人搜索和消费服务</h1>
+        <p>
+          蓦然认知是对话式服务搜索平台的开创者，致力于让机器帮助人搜索和消费服务；专注于认知计算、自然语言理解，拥有自主的语音交互全栈技术（降噪+语音+语义+多轮对话+知识图谱）。在对话服务平台的基础上，通过构建去APP化的对话应用，以语音交互为主、多模态交互融合的方式来进行服务分发，让设备具有拟人化的交互能力。同时通过场景化运营，帮助客户实现新的商业模式。
+          <br>
+          蓦然认知自主研发的对话机器人可以应用在车机、音箱，电视、耳机等多种硬件设备及汽车、家居、酒店等各个领域。
+          <br>
+        </p>
+      <div class="contact-button">
+        <a href="./contact.html"><span>合作联系</span><a>
+        <a href="./joinus.html"><span>加入我们</span></a>
+      </div>
+    </div>
+
+    <div class="qr-code">
+      <div id="qr-code-1">
+        <img src="./assets/wechat_qrcode.png" alt="微信公众号"  height="150" width="150">
+        <h1>微信订阅号</h1>
+      </div>
+      <div id="qr-code-1">
+        <img src="./assets/wechat-qrcode-service.png" alt="微信服务号" height="150" width="150">
+        <h1>微信服务号</h1>
+      </div>
+    </div>
+    
+  </div>
+
+  <footer id="footer">
+    北京蓦然认知科技有限公司 © 京ICP备16045349号
+  </footer>
+
+  <!-- </div> -->
+</body>
+<script src="js/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+<!-- 返回顶部  -->
+<script src="js/goTotop.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/home_basev6.js?v2.0" type="text/javascript" charset="utf-8"></script>
+<!-- lazyload -->
+<script src="js/jquery.lazyload.min.js" type="text/javascript" charset="utf-8"></script>
+<!-- 时间线  -->
+<script src="js/timeLine.js?v2.0" type="text/javascript" charset="utf-8"></script>
+<script>
+  if (!window.name) {
+      var str = Math.random().toString(36).substr(2);
+      //随机字符串 
+      window.location.href += '?S=' + str;
+      //兼容微信浏览器刷新
+      window.name = 'isreload';
+    }
+    $(document).ready(function () {
+      // swiper init
+      setTimeout(function () {
+        var mySwiper = new Swiper('.lb-container', {
+          pagination: '.pagination',
+          loop: false,
+          grabCursor: true,
+          paginationClickable: true,
+          paginationType: 'custom',
+          direction: 'vertical',
+          paginationCustomRender: function (swiper, current, total) {
+            var _html = '';
+            for (var i = 1; i <= total; i++) {
+              if (current == i) {
+                _html += '<li class="swiper-pagination-bullet-active"></li>';
+              } else {
+                _html += '<li class="swiper-pagination-bullet"></li>';
+              }
+            }
+            return _html; //返回所有的页码html
+          }
+        })
+      }, 300)
+      // loading
+      setTimeout(function () {
+        $("#loading").fadeOut(500);
+      }, 1500)
+      $('.arrow-left').on('click', function (e) {
+        e.preventDefault()
+        mySwiper.swipePrev()
+      })
+      $('.arrow-right').on('click', function (e) {
+        e.preventDefault()
+        mySwiper.swipeNext()
+      });
+      // pic特效果
+      // $('.lb-logo,.lb-logo1').attr('style', 'animation:aDirection 1.5s forwards'); class="animated bounceOutLeft"
+      // $('.lb-logo,.lb-logo1').addClass("animated bounce")
+      var resizeLb = function () {
+        $(".lb-container").find(".lb-img").eq(0).height(document.documentElement.clientHeight)
+        $(".lb-container").height($(".lb-container").find(".lb-img").eq(0).height())
+        $('.main-content').attr('style', 'top:' + document.documentElement.clientHeight + 'px')
+
+      }
+      resizeLb()
+      // lazy load
+      $('img.lazy').show().lazyload({
+        effect: "fadeIn"
+      });
+      window.onresize = function () {
+        resizeLb()
+      };
+    })
+</script>
+<!--导航栏JS-->
+<script src="js/nav_v1.js"></script>
+<script src="js/currency_js.js"></script>
+
+</html>

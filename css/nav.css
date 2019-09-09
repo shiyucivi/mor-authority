@@ -1,0 +1,374 @@
+    /* 
+- Name: megamenu.js - style.css
+- Version: 1.0
+- Latest update: 29.01.2016.
+- Author: Mario Loncarek
+- Author web site: http://marioloncarek.com
+*/
+
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+Body - not related to megamenu
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+body {
+  font-family: '微软雅黑',
+    'Source Sans Pro',
+    sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header_main a {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/*.description {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}*/
+
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+megamenu.js STYLE STARTS HERE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+Screen style's
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.header_main {
+  width: 100%;
+  clear: both;
+  /* max-width:1241px; */
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding-left: 5%;
+  padding-right: 4%;
+  /* justify-content: space-around; */
+
+  flex-direction: row;
+  position: fixed;
+  z-index: 30;
+  top: 42px;
+  padding-top: 10px;
+  padding-bottom: 18px;
+  /* left: 50%; */
+  /* margin-left: -620px; */
+  /* width: 100%; */
+}
+
+.header_main .header_logo img {
+  width: 80px;
+  height: 70px;
+}
+
+.header_main .logo img {
+  width: 140px;
+  height: 53px;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.menu-container {
+  width: 100%;
+  margin: 0 auto;
+  /* background:rgba(255, 255, 255, 0); */
+  background: black;
+
+
+}
+
+.menu-mobile {
+  display: none;
+  padding: 20px;
+}
+
+.menu-mobile:after {
+  content: "\f394";
+  font-family: "Ionicons";
+  font-size: 2.5rem;
+  padding: 0;
+  float: right;
+  position: relative;
+  top: 50%;
+  margin-top: 20px;
+  -webkit-transform: translateY(-25%);
+  -ms-transform: translateY(-25%);
+  transform: translateY(-25%);
+}
+
+.menu-dropdown-icon:before {
+  content: "\f489";
+  font-family: "Ionicons";
+  display: none;
+  cursor: pointer;
+  float: right;
+  padding: 1.5em 2em;
+  background: #fff;
+  color: #333;
+}
+
+.menu>ul {
+  margin: 0 auto;
+  width: 100%;
+  float: right;
+  list-style: none;
+  padding: 0;
+  position: relative;
+  /* IF .menu position=relative -> ul = container width, ELSE ul = 100% width */
+  box-sizing: border-box;
+}
+
+.menu>ul:before,
+.menu>ul:after {
+  content: "";
+  display: table;
+}
+
+.menu>ul:after {
+  clear: both;
+}
+
+.menu>ul>li {
+  float: left;
+  background: rgba(255, 255, 255, 0);
+  padding: 0;
+  margin: 0;
+}
+
+.menu>ul>li a {
+  text-decoration: none;
+  padding: 20px;
+
+  display: block;
+}
+
+.menu>ul>li a:hover {
+  /* background: #f0f0f0; */
+  color: #C08D32;
+}
+
+.menu>ul>li>ul {
+  display: none;
+  width: 100%;
+  background: #0B121B;
+  position: absolute;
+  z-index: 99;
+  left: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.menu>ul>li>ul:before,
+.menu>ul>li>ul:after {
+  content: "";
+  display: table;
+}
+
+.menu>ul>li>ul:after {
+  clear: both;
+}
+
+.menu>ul>li>ul>li {
+  margin: 0;
+  padding-bottom: 0;
+  list-style: none;
+  width: 25%;
+  background: none;
+  float: left;
+}
+
+.menu>ul>li>ul>li a{
+  color: #777;
+  padding: .2em 0;
+  /* width: 95%; */
+  text-align: center;
+  display: block;
+  border-bottom: 1px solid #ccc;
+}
+
+.menu>ul>li>ul>li>ul {
+  display: block;
+  padding: 0;
+  margin: 10px 0 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.menu>ul>li>ul>li>ul:before,
+.menu>ul>li>ul>li>ul:after {
+  content: "";
+  display: table;
+}
+
+.menu>ul>li>ul>li>ul:after {
+  clear: both;
+}
+
+.menu>ul>li>ul>li>ul>li {
+  float: left;
+  width: 100%;
+  padding: 10px 0;
+  margin: 0;
+  font-size: .8em;
+}
+
+.menu>ul>li>ul>li>ul>li a {
+  border: 0;
+}
+
+.menu>ul>li>ul.normal-sub {
+  width: 118px;
+  left: auto;
+  /* padding: 10px 10px; */
+  margin-left: -9px;
+  box-shadow: 0px 2px 18px #550b0d17;
+
+}
+
+.menu>ul>li>ul.normal-sub>li {
+  width: 100%;
+}
+
+.menu>ul>li>ul.normal-sub>li :hover {
+  background: #3a3f47;
+}
+
+.menu>ul>li>ul.normal-sub>li a {
+  font-size: 16px;
+  color: #C5C6C8;
+  border: 0;
+  padding: 1em 0;
+}
+
+.core_technology_item p {
+  font-size: 16px;
+}
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+Mobile style's
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#footer {
+  width: 100%;
+  font-size: 14px !important;
+  color: #767879;
+  height: 40px;
+  line-height: 40px;
+  background: #040b10;
+  text-align: center;
+}
+
+@media only screen and (max-width: 959px) {
+  .event_wrap p {
+    font-size: 10px !important;
+  }
+
+  .menu>ul>li::after,
+  .menu>ul>li::before {
+    display: none !important;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .header_main {
+    top: 0px !important;
+    padding: 0;
+
+  }
+
+  .top-nav {
+    width: 100%;
+    background: #fff;
+
+  }
+
+  .menu-container {
+    width: 100%;
+  }
+
+  .menu-mobile {
+    display: block;
+  }
+
+  .menu-dropdown-icon:before {
+    display: block;
+  }
+
+  .menu>ul {
+    display: none;
+
+  }
+
+  .menu>ul>li {
+    width: 100%;
+    float: none;
+    display: block;
+  }
+
+  .menu>ul>li a {
+    padding: 1.5em;
+    width: 100%;
+    display: block;
+  }
+
+  .menu>ul>li>ul {
+    position: relative;
+  }
+
+  .menu>ul>li>ul.normal-sub {
+    width: 100%;
+  }
+
+  .menu>ul>li>ul>li {
+    float: none;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .menu>ul>li>ul>li:first-child {
+    margin: 0;
+  }
+
+  .menu>ul>li>ul>li>ul {
+    position: relative;
+  }
+
+  .menu>ul>li>ul>li>ul>li {
+    float: none;
+  }
+
+  .menu .show-on-mobile {
+    display: block;
+    background: #3a3f47;
+  }
+
+  .menu .show-on-mobile a {
+    color: #C5C6C8;
+  }
+
+  .menu>ul>li>ul.normal-sub {
+    margin-left: 0;
+  }
+
+  #footer {
+    font-size: 10px !important;
+  }
+}

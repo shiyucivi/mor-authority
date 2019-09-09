@@ -1,0 +1,145 @@
+@charset "utf-8";
+/* CSS Document */
+*{text-decoration:none;list-style:none;font-family:'微软雅黑';}
+.clearfix{clear:both;}
+/*---------- 顶部导航-通用 ----------*/
+.header_nav a{color:#fff;display:block;}
+.header_nav{
+	height:80px;
+	background-image: url("../assets/images/product/bg_morweb_morinformation_topnav.png");
+	background-color:rgba(0,0,0,0);
+	position:fixed;
+	width:100%;
+	z-index:9999;
+	top:0;
+}
+.header_nav>a:first-child{padding:22px 0 22px 40px;width:124px;float:left;}
+.header_nav>a:first-child img{width:100%;transform: scale(1.5);}
+.header_nav_xf{float:right;}
+.header_nav_xf ul{margin-right:40px;}
+.header_nav_xf ul>li{
+	height:57px;
+	float:left;
+	padding:20px 0 2px 0;
+	margin:0 14px;
+	line-height:40px;
+	color:#fff;
+	cursor:pointer;
+	font-size:16px;
+	position:relative;
+}
+.header_nav_xf ul>li:hover{border-bottom:2px solid #eeaf19;}
+.header_nav_xf ul>li a{
+	height:35px;
+}
+.header_nav_xf ul>li a:hover{
+	text-decoration: none;
+}
+/*.header_nav_xf ul>li:nth-child(3) .nav_z{width:140px;}*/
+/*.header_nav_xf ul>li:nth-child(4) .nav_z{width:134px;}*/
+/*.header_nav_xf ul>li:nth-child(6) .nav_z{width:108px;}*/
+	/*下滑导航子集-通用*/
+.header_nav_xf .nav_z{font-size:14px;padding:0 20px 0 20px;
+	position:absolute;background-color:rgba(0,0,0,0.9);top:68px;left:50%;transform:translateX(-50%);text-align:center;display:none;
+}
+.nav_z li{transition:all 0.6s;}
+.nav_z li a{color:#fff;display:block;word-break:keep-all;white-space:nowrap;}
+/*.nav_z li:hover{font-size:18px;}*/
+.nav_z li a:hover{color:#eeaf19;}/*font-size:18px;*/
+	/*下滑子集导航-通用*/
+
+.nav_anniu{position:absolute;right:70px;top:calc(50% - 17px);display: none;}
+.menu{cursor:pointer;}
+.menu span{
+	display:block;width:30px;height:2px;
+	background-color:#fff;margin:7px;transform-origin:left center;transition:1s;
+}
+.span_class_opacity{opacity:0;}
+.span_class_ratate1{transform:rotate(37deg);}
+.span_class_ratate2{transform:rotate(-37deg);}
+
+.nav_xiao_tc a{color:#fff;display:block;}
+.nav_xiao_tc{
+	position:fixed;background-color:rgba(0,0,0,0.6);color:#fff;width:100%;height:100%;top:68px;
+	text-align:center;z-index:9999;line-height:60px;display:none;overflow:hidden;
+}
+.nav_xiao_tc>div{position:relative;height:calc(100% - 60px);width:100%;overflow:auto;}
+.nav_xiao_tc>div::-webkit-scrollbar {/*滚动条整体样式*/width: 0px;/*高宽分别对应横竖滚动条的尺寸*/height: 4px;}
+.nav_xiao_tc>div::-o-scrollbar {/*滚动条整体样式*/width: 0px;/*高宽分别对应横竖滚动条的尺寸*/height: 4px;}
+.nav_xiao_tc>div::-moz-scrollbar {/*滚动条整体样式*/width: 0px;/*高宽分别对应横竖滚动条的尺寸*/height: 4px;}
+.nav_xiao_tc>div::-ms-scrollbar {/*滚动条整体样式*/width: 0px;/*高宽分别对应横竖滚动条的尺寸*/height: 4px;}
+.nav_xiao_tc ul>li{font-size:20px;}
+.nav_xiao_tc ul>li:nth-child(8),.nav_xiao_tc ul>li:nth-child(9){display:none;}
+.nav_xiao_tc ul>li:hover{background-color:rgba(0,0,0,0.4);cursor:pointer;}
+.nav_xiao_tc ul li ol{display:none;font-size:16px;color:#999;}
+.nav_xiao_tc ul li ol>li:hover{color:#fff;}
+.nav_xiao_tc .nav_z{margin:0 auto;}
+
+	/*-- 左右分次级导航 --*/
+.zuoYouFen{background-color:rgba(0,0,0,0.6);position:absolute;left:50%;top:68px;transform:translateX(-50%);width:330px;}
+/* .zuoYouFen{background-color:rgba(0,0,0,0.6);position:absolute;left:50%;top:68px;transform:translateX(-50%);width:271px;} */
+.zuoYouFen>ol:nth-child(1){
+	position: absolute;
+	left:18%;
+	top:12px;
+	height:300px;
+	width:32%;
+}
+.zuoYouFen>ol:nth-child(2){
+	position: absolute;
+	left:50%;
+	top:12px;
+	width:32%;
+	height:300px;
+}
+.zuoYouFen>ol:nth-child(3){
+	position: absolute;
+	left:82%;
+	top:12px;
+	height:300px;
+	width:32%;
+}
+.header_nav .header_nav_xf ul li:nth-child(5) ol{
+	position: absolute;
+	top:80px;
+	height:100px;
+}
+
+.zuoYouFen>ol>p{color:#eeaf19;font-weight:bold;font-size:16px}
+.zuoYouFen>ol>li>a{text-align: center;}
+	/*-- 左右分次级导航 --*/
+.banner_main{
+	margin-top: 100px;
+}
+
+@media(max-width: 1081px){
+		/*导航栏*/
+		.header_nav{
+			height: 130px;
+			background-color:#090d1d;
+			background-repeat: no-repeat;
+		}
+		.header_nav_xf ul li{
+			padding: 5px;
+			font-size:10px;
+		}
+		.header_nav_xf ul>li:hover{
+			padding:5px;
+		}
+		.zuoYouFen{
+			top:40px;
+		}
+		.zuoYouFen>ol>p{
+			font-size:12px;
+		}
+		.header_nav_xf ul>li{
+			line-height: 30px;
+		}
+		.header_nav .header_nav_xf ul li:nth-child(5) ol{
+			top:50px;
+		}
+
+		body .banner_main{
+			margin-top: 150px;
+		}
+	}

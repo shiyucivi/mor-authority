@@ -1,0 +1,414 @@
+ /* 导航跳转 */
+ /* .menu>ul>li:nth-child(3) a {
+    color: #ECAB3B;
+}
+
+.menu>ul>li:nth-child(3) {
+    position: relative;
+}
+
+.menu>ul>li:nth-child(3):after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -35px;
+    margin-top: 15px;
+    width: 70px;
+    height: 2px;
+    background: #ECAB3B;
+} */
+
+
+ .body_main {
+   width: 90%;
+   height: 100%;
+   max-width: 1200px;
+   margin: 0 auto;
+ }
+
+ .top_router {
+   width: 100%;
+   height: 16px;
+   line-height: 16px;
+   margin: 28px 0px;
+   font-size: 16px;
+ }
+
+ .top_router i {
+   display: inline-block;
+   width: 4px;
+   height: 100%;
+   margin-right: 10px;
+   background-color: #f4b035;
+ }
+
+ .top_router span {
+   display: inline-block;
+   height: 100%;
+ }
+
+ .top_router .router_url {
+   color: #080f18;
+ }
+
+ .top_router .router_last {
+   color: #f4b035;
+ }
+
+ /* 主体内容 */
+ .product_wrap {
+   width: 100%;
+ }
+
+ .product_wrap .product_header {
+   width: 100%;
+   max-height: 480px;
+ }
+
+ .product_header .product_header_img {
+   width: 100%;
+   height: 350px;
+   background-color: #000;
+   background: url("../assets/imgs/product/img_chanpiin_auto.png") center center no-repeat;
+   background-size: cover;
+   position: relative;
+ }
+
+ .product_header .product_header_img .dialog_box {
+   height: 324px;
+   /* width: 57%; */
+   width: 684px;
+   position: absolute;
+   top: 18px;
+   right: 34px;
+   box-sizing: border-box;
+   /* padding: 50px 0px; */
+   /* padding: 18px 20px; */
+   overflow: hidden;
+   background: url("../assets/imgs/product/bg_chanpin_dialog.png") center center no-repeat;
+   background-size: cover;
+ }
+
+ .dialog_min_box {
+   width: 80%;
+   max-width: 564px;
+   height: 212px;
+   position: absolute;
+   top: 52px;
+   left: 74px;
+   box-sizing: border-box;
+   /* padding: 18px 28px; */
+   overflow: hidden;
+   /* border: 1px solid #fff; */
+ }
+
+ .product_header .product_header_img .dialog_wrap {
+   width: 100%;
+   clear: both;
+   position: absolute;
+   top: 13px;
+ }
+
+ .dialog_wrap li {
+   opacity: 0;
+   filter: alpha(opacity=0);
+ }
+
+ .dialog_wrap li.dialog_li {
+   position: relative;
+   width: 100%;
+   height: 40px;
+   /* margin: 10px 0px; */
+   box-sizing: border-box;
+   line-height: 40px;
+   display: block;
+   margin-bottom: 13px;
+   /* margin: 4px 0px; */
+   visibility: hidden;
+   /* top: 10px; */
+ }
+
+ .dialog_wrap li.dialog_li i {
+   display: inline-block;
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   /* position: absolute; */
+ }
+
+ .dialog_wrap li.dialog_li p {
+   color: #babcc1;
+   font-size: 12px;
+   max-width: 398px;
+ }
+
+ .dialog_wrap li.user {
+   float: left;
+ }
+
+ .dialog_wrap li.user i {
+   float: left;
+   background: url("../assets/imgs/product/ic_chanpin_touxiang.png") center center no-repeat;
+   background-size: 100% 100%;
+ }
+
+ .dialog_wrap li.user p {
+   padding-left: 20px;
+   float: left;
+ }
+
+ .dialog_wrap li.mor {
+   float: right;
+ }
+
+ .dialog_wrap li.mor i {
+   float: right;
+   background: url("../assets/imgs/product/ic_chanpin_touxiang2.png") center center no-repeat;
+   background-size: 100% 100%;
+ }
+
+ .dialog_wrap li.mor p {
+   padding-right: 20px;
+   float: right;
+ }
+
+ li.date_tip {
+   width: 100%;
+   height: 40px;
+   line-height: 40px;
+   margin-bottom: 10px;
+   /* margin: 10px 0px; */
+   text-align: center;
+   color: #6d7071;
+   font-size: 12px;
+   position: relative;
+   float: left;
+   visibility: hidden;
+ }
+
+ .product_header .product_desc {
+   width: 100%;
+   height: 130px;
+   box-sizing: border-box;
+   padding: 30px 60px;
+   /* display: table-cell;
+    vertical-align: middle; */
+   color: #0b111d;
+   background-color: #fff;
+ }
+
+ .product_desc h2 {
+   margin-bottom: 16px;
+   font-style: normal;
+   font-size: 20px;
+   font-weight: bold;
+ }
+
+ .product_desc p {
+   /* font-size: 16px; */
+   font-size: 14px;
+ }
+
+ .product_main {
+   width: 100%;
+ }
+
+ .product_service,
+ .product_advantage {
+   width: 100%;
+   margin-top: 100px;
+ }
+
+ .product_title {
+   /* width: 204px; */
+   margin: 0px auto 40px;
+   font-size: 20px;
+   height: 20px;
+   line-height: 20px;
+   color: #000;
+   text-align: center;
+ }
+
+ .product_title i {
+   display: inline-block;
+   width: 6px;
+   height: 6px;
+   font-size: 0;
+   line-height: 0;
+   overflow: hidden;
+   position: relative;
+   top: -5px;
+   /* border-width: 5px; */
+   /* border-style: solid dashed dashed dashed; */
+   /* border-color: #000 transparent transparent transparent; */
+   background: url("../assets/images/ic_morweb_home_triangle.png") no-repeat center;
+ }
+
+ .product_title span {
+   display: inline-block;
+   padding: 0px 56px;
+ }
+
+ /* 功能服务 */
+ .product_service {
+   /* width: 100%; */
+ }
+
+ .product_service ul {
+   width: 100%;
+   display: flex;
+   display: -webkit-flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   overflow-y: hidden;
+   height: 500px;
+   position: relative;
+ }
+
+ .product_service ul .product_tab {
+   width: 19%;
+   background-color: #fff;
+   text-align: center;
+   margin-bottom: 25px;
+ }
+
+ .product_service .product_tab .tab_img {
+   display: block;
+   width: 80px;
+   height: 80px;
+   margin: 32px auto 24px;
+ }
+
+ .product_tab .tab_img img {
+   display: block;
+   width: 100%;
+   height: auto;
+ }
+
+ .product_service .product_tab span {
+   display: inline-block;
+   text-align: center;
+   color: #000;
+   /* font-size: 18px; */
+   font-size: 16px;
+   margin-bottom: 24px;
+ }
+
+
+ /* 我们的优势 */
+ .product_advantage {
+   width: 100%;
+   max-width: 1200px;
+ }
+
+ .product_advantage ul {
+   width: 100%;
+   display: flex;
+   display: -webkit-flex;
+   justify-content: space-between;
+ }
+
+ .product_advantage ul li {
+   background-color: #fff;
+   text-align: center;
+ }
+
+ ul li div {
+   width: 100%;
+ }
+
+ ul li div img {
+   display: block;
+   width: 100%;
+   height: auto;
+ }
+
+ .product_advantage ul li span {
+   display: inline-block;
+   width: 100%;
+   height: 60px;
+   line-height: 60px;
+   text-align: center;
+   color: #060e14;
+   /* font-size: 20px; */
+   font-size: 16px;
+ }
+
+ ul.advantage_col3 {
+   margin-bottom: 36px;
+ }
+
+ ul.advantage_col4 {
+   margin-bottom: 30px;
+ }
+
+ ul.advantage_col3 li {
+   width: 33%;
+   max-width: 376px;
+ }
+
+ ul.advantage_col4 li {
+   width: 24%;
+   max-width: 273px;
+ }
+
+ .orangeBox {
+   display: flex;
+   justify-content: center;
+   flex-direction: row;
+   font-size: 18px;
+   /* font-size: 20px; */
+   margin-top: 60px;
+   color: #f4b035;
+ }
+
+
+
+ /* 页脚 */
+ #footer {
+   margin-top: 30px;
+ }
+
+ @media only screen and (max-width: 1200px) {
+   .product_header .product_header_img .dialog_box {
+     right: 2%;
+   }
+ }
+
+
+ @media only screen and (max-width: 959px) {
+   .product_main ul {
+     flex-wrap: wrap;
+   }
+
+   .product_main ul li {
+     width: 100%;
+     margin: 0 auto;
+     margin-bottom: 25px;
+     max-width: 100%;
+   }
+
+   .product_service ul .product_tab {
+     width: 70%;
+     margin: 0 auto 25px;
+   }
+
+   .product_header .product_header_img {
+     width: 100%;
+     height: 200px;
+     background-color: #000;
+     /* background: url(./assets/imgs/product/img_chanpiin_auto.png) center center no-repeat; */
+     background-size: cover;
+     position: relative;
+   }
+
+   .product_header .product_desc {
+     width: 100%;
+     height: auto;
+   }
+
+   .product_header .product_header_img .dialog_box {
+     display: none;
+   }
+ }

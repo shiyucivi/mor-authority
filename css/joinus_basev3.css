@@ -1,0 +1,520 @@
+body {
+  background: #F6F5F6;
+}
+
+.header_main {
+  background-image: url('../assets/images/bg_morweb_morinformation_topnav.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.content_max {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.banner_main .page_cookie {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 35px 0 28px 0;
+}
+
+.banner_main .page_cookie .orangeBox {
+  margin: 0px !important;
+  margin-right: 5px !important;
+  width: 4px;
+  height: 20px;
+  background: #ECAB3B;
+}
+
+.banner_main .page_cookie span {
+  margin-left: 8px;
+  color: #ECAB3B;
+}
+
+.banner_content {
+  width: 100%;
+  height: 300px;
+  background-image: url('../assets/images/joinus/img_morweb_joinus_banner.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 28px 0 30px 0;
+}
+
+.banner_content .flot_img {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+
+.banner_content .flot_img:hover {
+  transform: scale(1.1)
+}
+
+.banner_content .flot_img img {
+  width: 60px;
+  height: 60px;
+  margin-left: 15px;
+}
+
+.join_tabs {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-content: center;
+}
+
+.join_tabs div {
+  width: 120px;
+  height: 40px;
+  font-size: 20px;
+  line-height: 40px;
+  border: 1px solid #ABABAB;
+  color: #ABABAB;
+  background: #fff;
+  text-align: center;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.join_tabs .activity {
+  background: #ECAB3B;
+  color: #fff;
+  position: relative;
+  border: none;
+
+}
+
+.join_tabs .activity::after {
+  content: '';
+  width: 12px;
+  height: 6px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -6px;
+  margin-top: 15px;
+  background: url(../assets/images/joinus/ic_morweb_joinus_trigle.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.oranger_line {
+  margin-top: 20px;
+  width: 100%;
+  height: 1px;
+  background: #ECAB3B;
+}
+
+.joinus_steps {
+  width: 100%;
+  background: #fff;
+  height: 200px;
+  margin-top: 60px;
+}
+
+.title {
+  font-size: 20px;
+  text-align: center;
+  color: #040404;
+  margin: 0 auto;
+  padding-top: 44px;
+  margin-bottom: 26px;
+}
+
+.joinus_steps_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.joinus_steps_content .joinus_steps_line {
+  margin: 0 36px;
+  margin-top: -20px;
+  width: 56px;
+  height: 1px;
+  background: #ECAB3B;
+}
+
+.joinus_steps_item {
+  text-align: center;
+}
+
+.joinus_steps_item div {
+  width: 120px;
+  height: 30px;
+  color: #000;
+  font-size: 16px;
+  background: #F9F9F9;
+  border: 1px solid #ECAB3B;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 30px;
+  margin-bottom: 14px;
+
+}
+
+.joinus_steps_item span {
+  font-size: 10px;
+  color: #8D8F8F;
+}
+
+.school_steps {
+  margin-top: 100px;
+}
+
+.school_steps h1 {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.school_steps_content,
+.jobs_meetings_content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.jobs_meetings_content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.school_steps_item {
+  width: 200px;
+  height: 280px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: #fff;
+}
+
+.school_steps_item div:nth-child(1) {
+  height: 48px;
+  width: 100%;
+  background: #ECAB3B;
+  color: #fff;
+  font-size: 20px;
+  line-height: 48px;
+}
+
+.school_steps_item div:nth-child(3) {
+  width: 100%;
+  color: #020A0F;
+  font-size: 16px;
+}
+
+.school_steps_img {
+  width: 160px;
+  margin: 10px 0 12px;
+  height: 160px;
+}
+
+.school_steps_img img {
+  height: 100%;
+  width: 100%;
+}
+
+.jobs_meetings {
+  margin-top: 100px;
+  margin-bottom: 60px;
+}
+
+.jobs_meetings h1 {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.jobs_meetings_item {
+   width:25%; 
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.jobs_meetings_img {
+  width: 160px;
+  margin: 0 0 0px;
+  height: 160px;
+}
+
+.compony_content {
+  /* max-height: 600px; */
+  margin: 0 auto;
+}
+
+.join_school .compony_content {
+  padding-top: 40px;
+
+}
+
+.whiteBack {
+  background: #fff;
+}
+
+.compony_content_img img {
+  width: 100%;
+  height: auto;
+}
+
+.cur {
+  cursor: pointer;
+}
+
+.compony_content>p {
+  width: 90%;
+  max-width: 1078px;
+  font-size: 14px;
+  line-height: 28px;
+  margin: 0 auto;
+  margin-top: 28px;
+  margin-bottom: 68px;
+}
+
+.phone_email {
+  max-width: 1078px;
+  font-size: 14px;
+  line-height: 28px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+.phone_email h1 {
+  font-size: 18px;
+}
+
+.phone_email {
+  line-height: 28px;
+}
+
+
+/* jobs */
+.jobs_tabs {
+  padding-left: 70px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  position: relative;
+}
+
+.jobs_tabs_item {
+  font-size: 18px;
+  height: 20px;
+  width: 20%;
+  position: relative;
+  line-height: 20px;
+  padding-left: 35px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+.jobs_tabs_item::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  left: -0;
+  bottom: 1px;
+  background: url('../assets/images/joinus/ic_morweb_joinus_sign.png') no-repeat center;
+  position: absolute;
+
+}
+
+.flot_deatil {
+  width: 100%;
+  /* height: 285px; */
+  margin: 12px 0 28px;
+  padding: 20px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  box-shadow: 0px 3px 10px #ccc;
+}
+
+.flot_deatil div {
+  font-size: 16px;
+  width: 50%;
+}
+
+.flot_deatil div p {
+  margin: 0 auto;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.flot_deatil div ul {
+  margin: 0 auto;
+  width: 70%;
+
+}
+
+.flot_deatil div li {
+  font-size: 13px;
+  line-height: 26px;
+}
+
+.sanjiao {
+  left: 40px;
+  bottom: -77px;
+  width: 0;
+  height: 0;
+  border-width: 0 10px 10px;
+  border-style: solid;
+  border-color: transparent transparent #fff;
+  /*透明 透明  灰*/
+  margin: 40px auto;
+  position: absolute;
+}
+
+.hide {
+  display: none;
+
+}
+
+.jobs_button {
+  width: 240px;
+  height: 60px;
+  font-size: 18px;
+  line-height: 60px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 160px;
+  margin-bottom: 30px;
+
+}
+
+.content_max a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.orange {
+  background: #ECAB3B;
+}
+
+.center {
+  text-align: center;
+}
+
+.page_cookie {
+  cursor: pointer;
+}
+
+.page_cookie a {
+  color: #000;
+  text-decoration: none;
+}
+
+.bottom_text {
+  position: relative;
+}
+
+.bottom2ma {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.bottom2ma p {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 14px;
+  color: #040b10;
+}
+
+.code2ma {
+  width: 120px;
+  height: 120px;
+  background: url('../assets/images/joinus/img_morweb_joinus_moran.png') no-repeat;
+  background-size: cover;
+}
+
+.spantext {
+  text-align: right;
+  font-size: 8px;
+  float: left;
+  line-height: 30px;
+  position: relative;
+  bottom: -20px;
+}
+
+/* 隐藏某些类别招聘 */
+.join_soci .jobs_meetings_content .jobs_meetings_item:nth-child(3),
+.join_soci .jobs_meetings_content .jobs_meetings_item:nth-child(2),
+.join_soci .jobs_meetings_content .jobs_meetings_item:nth-child(4) {
+  display: none;
+}
+
+.jobplace_text {
+  text-align: right;
+  font-size: 12px;
+}
+
+@media only screen and (max-width:959px) {
+  .content_max {
+    width: 100%;
+  }
+
+  .joinus_steps {
+    overflow-x: scroll;
+    width: 100%;
+  }
+
+  .joinus_steps_content {
+    justify-content: flex-start;
+  }
+
+  .school_steps_item {
+    width: 100%;
+  }
+
+  .jobs_tabs {
+    padding: 0;
+  }
+
+  .jobs_tabs_item {
+    width: 50%;
+  }
+
+  .bottom2ma {
+    width: 120px;
+    position: relative;
+    left: 50%;
+    margin-left: -60px;
+  }
+
+  .jobs_meetings_item {
+    margin-bottom: 20px;
+    width: 50%;
+  }
+
+}

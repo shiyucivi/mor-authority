@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+  <meta name="toTop" content="true" />
+  <link rel="shortcut icon" href="http://imoran.net/static/images/icon/imoran.ico" />
+  <meta name="keywords" content="蓦然,蓦然认知,人工智能,智能,认知,自然语言理解,mor,moran,小蓦,小蓦机器人,蓦然认知科技,语音,
+    智能交互,决策,语音交互，echo,alexa,viv,siri,cortana,google now，度秘" />
+  <meta name="description"
+    content="蓦然认知（Moran）是一家以认知计算为核心的人工智能公司，拥有领先的智能交互及决策引擎Mor（又名：小蓦机器人）. Mor可以理解人类语言，并与人自然对话，驱动机器一起为人们提供更加友好和高效的服务。我们相信Mor的持续演将改变人与机器之间的交互方式和信息获取方式，并最终形成全新的互联网入口。" />
+  <title>加入我们</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/ionicons.min.css" />
+  <link rel="stylesheet" href="css/joinus_basev3.css" />
+
+  <style type="text/css">
+    /* 导航跳转 */
+    .menu>ul>li:nth-child(5) a {
+      color: #ecab3b;
+    }
+
+    .menu>ul>li:nth-child(5) {
+      position: relative;
+    }
+
+    .menu>ul>li:nth-child(5):before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -35px;
+      margin-top: 15px;
+      width: 70px;
+      height: 2px;
+      background: #ecab3b;
+    }
+
+    /* 主体 */
+    .body_main {
+      width: 90%;
+      height: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* 路径导航 */
+    .top_router {
+      width: 100%;
+      height: 16px;
+      line-height: 16px;
+      margin: 28px 0px;
+      font-size: 16px;
+    }
+
+    .top_router i {
+      display: inline-block;
+      width: 4px;
+      height: 100%;
+      margin-right: 10px;
+      background-color: #f4b035;
+    }
+
+    .top_router span {
+      display: inline-block;
+      height: 100%;
+    }
+
+    .top_router .router_url {
+      color: #080f18;
+    }
+
+    .top_router .router_last {
+      color: #f4b035;
+    }
+
+    /* 新闻详情 */
+    .news_detail_wrap {
+      width: 100%;
+    }
+
+    .news_detail_wrap .top_pic {
+      width: 100%;
+      height: 300px;
+      margin-bottom: 20px;
+      overflow: hidden;
+    }
+
+    .top_pic img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .news_detail_wrap .news_header {
+      width: 100%;
+      height: 114px;
+      box-sizing: border-box;
+      padding: 20px 0px;
+      text-align: center;
+      border-bottom: 1px solid #e1e1e1;
+    }
+
+    .news_header .article_title {
+      color: #080f18;
+      font-size: 20px;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    .news_header .article_date {
+      color: #dadadb;
+      font-size: 18px;
+    }
+
+    .news_body {
+      width: 90%;
+      margin: 20px auto;
+      max-width: 1080px;
+    }
+
+    .news_body p {
+      color: #080f18;
+      font-size: 14px;
+      line-height: 28px;
+    }
+
+    .page_btn {
+      width: 100%;
+      margin: 40px 0px;
+      text-align: center;
+    }
+
+    .page_btn .btn {
+      display: inline-block;
+      width: 80px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      box-sizing: border-box;
+      margin: 0px 10px;
+      cursor: pointer;
+    }
+
+    .page_btn .default {
+      border: 1px solid #cfcfcf;
+      color: #c2c3c3;
+      background-color: #f6f6f6;
+    }
+
+    .page_btn .active {
+      border: 1px solid #f4b035;
+      color: #fff;
+      background-color: #f4b035;
+    }
+
+    .recommond_tag {
+      width: 100%;
+      height: 16px;
+      font-size: 14px;
+      overflow: hidden;
+    }
+
+    .recommond_tag strong {
+      /* width: 10%; */
+      float: left;
+      display: inline-block;
+      margin-right: 20px;
+      color: #080f18;
+      font-weight: 600;
+    }
+
+    .recommond_tag .article_recommod {
+      width: 90%;
+      float: left;
+      display: inline-block;
+      overflow: hidden;
+    }
+
+    .recommond_tag .article_recommod span {
+      display: inline-block;
+      margin: 0px 20px;
+      color: #919293;
+    }
+
+    /* 页脚 */
+    #footer {
+      margin-top: 30px;
+    }
+
+    @media screen and (max-width: 640px) {}
+  </style>
+</head>
+
+<body>
+  <!-- nav -->
+  <div class="header_main">
+    <div class="logo">
+      <a href="./index.html">
+        <img src="./assets/images/logo_morweb_home.png" alt="logo" />
+      </a>
+    </div>
+    <div class="top-nav">
+      <div class="menu-container">
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="./about.html">关于公司</a>
+            </li>
+            <!--                 <li><a href="#">About</a>
+                                        <ul>
+                                            <li><a href="#">School</a>
+                                                <ul>
+                                                    <li><a href="#">1</a></li>
+                                                    <li><a href="#">2</a></li>
+                                                    <li><a href="#">2</a></li>
+                                                    <li><a href="#">3</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Study</a>
+                                                <ul>
+                                                    <li><a href="#">a</a></li>
+                                                    <li><a href="#">b</a></li>
+                                                    <li><a href="#">c</a></li>
+                                                    <li><a href="#">d</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Research</a>
+                                                <ul>
+                                                    <li><a href="#">a</a></li>
+                                                    <li><a href="#">b</a></li>
+                                                    <li><a href="#">c</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Something</a>
+                                                <ul>
+                                                    <li><a href="#">1</a></li>
+                                                    <li><a href="#">1</a></li>
+                                                    <li><a href="#">3</a></li>
+                                                    <li><a href="#">4</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li> -->
+
+            <li>
+              <a href="#">产品介绍</a>
+              <ul>
+                <li>
+                  <a href="./pro_car.html">对话OS</a>
+                </li>
+                <li>
+                  <a href="./pro_apply.html">对话平台</a>
+                </li>
+                <li>
+                  <a href="./pro_speaker.html">智能语音座舱</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="./technology.html">核心技术</a>
+            </li>
+            <!-- <li>
+              <a href="#">解决方案</a>
+              <ul>
+                <li>
+                  <a href="./morAuto.html">智能车载</a>
+                </li>
+                <li>
+                  <a href="./morIot.html">智能家具</a>
+                </li>
+              </ul>
+            </li> -->
+            <li>
+              <a href="./news.html">蓦然新闻</a>
+            </li>
+            <li>
+              <a href="./joinus.html">加入我们</a>
+            </li>
+            <li>
+              <a href="./contact.html">联系我们</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="body_main">
+    <div class="top_router">
+      <i></i><span class="router_url router_home" id="router_index">首页&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;</span><span
+        class="router_next router_url" id="router_news">蓦然新闻&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;</span><span
+        class="router_last" id="router_news_detail">新闻详情</span>
+    </div>
+    <div class="news_detail_wrap">
+      <div class="top_pic">
+        <img src="./assets/images/detail/img_13.png" alt="top_pic" />
+      </div>
+      <div class="news_header">
+        <h2 class="article_title">蓦然认知参加人工智能峰会</h2>
+        <span class="article_date">2018-06-07</span>
+      </div>
+      <div class="news_body">
+        <p>
+          iPhone
+          X问世，第十代苹果手机落地，其语音系统Siri也已走过几个春秋。Siri作为语音助手出现，问天气、打电话都不在话下。在今年苹果推出的新功能中，FaceID刷脸付款一时成了热点，人脸识别的落地引发了铺天盖地的讨论和刷屏。刷脸都来了，让我们放飞想象力，畅想一下未来：如果对着Siri聊聊天就能购买，刷个脸就能付款，类似这样的体验岂不是更爽？
+          而这需要人工智能新技术的支持，也需要一个全局化的思考。<br />
+          iPhone
+          X问世，第十代苹果手机落地，其语音系统Siri也已走过几个春秋。Siri作为语音助手出现，问天气、打电话都不在话下。在今年苹果推出的新功能中，FaceID刷脸付款一时成了热点，人脸识别的落地引发了铺天盖地的讨论和刷屏。刷脸都来了，让我们放飞想象力，畅想一下未来：如果对着Siri聊聊天就能购买，刷个脸就能付款，类似这样的体验岂不是更爽？
+          而这需要人工智能新技术的支持，也需要一个全局化的思考。iPhone
+          X问世，第十代苹果手机落地，其语音系统Siri也已走过几个春秋。Siri作为语音助手出现，问天气、打电话都不在话下。在今年苹果推出的新功能中，FaceID刷脸付款一时成了热点，人脸识别的落地引发了铺天盖地的讨论和刷屏。刷脸都来了，让我们放飞想象力，畅想一下未来：如果对着Siri聊聊天就能购买，刷个脸就能付款，类似这样的体验岂不是更爽？
+          而这需要人工智能新技术的支持，也需要一个全局化的思考。
+        </p>
+      </div>
+      <div class="page_btn">
+        <span class="btn active" id="prev_btn">上一篇</span>
+        <span class="btn active" id="next_btn">下一篇</span>
+      </div>
+      <div class="recommond_tag">
+        <strong>文章推荐</strong>
+        <div class="article_recommod">
+          <span>蓦然认知两岁啦</span>
+          <span>龚思颖：她把AI从中国带去斯图加特</span>
+          <span>戴帅湘的创业之路</span>
+          <span>蓦然认知来CES啦</span>
+          <span>龚思颖：她把AI从中国带去斯图加特</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer id="footer">
+    北京蓦然认知科技有限公司 © 京公网安备11010502000501号
+  </footer>
+</body>
+<script src="js/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/scroll.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/megamenu.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/goTotop.js" type="text/javascript" charset="utf-8"></script>
+<script>
+  $(function () {
+    var _href = window.location.href
+    var _id = _href.split('id=')[1]
+    var articleLens = _href.split('p=')[1].split('&')[0]
+
+    if (_id >= articleLens) {
+      $('.page_btn .btn').removeClass('active default')
+      $('#prev_btn')
+        .addClass('active')
+        .siblings()
+        .addClass('default')
+    }
+    if (_id <= 1) {
+      $('.page_btn .btn').removeClass('active default')
+      $('#next_btn')
+        .addClass('active')
+        .siblings()
+        .addClass('default')
+    }
+
+    $('.page_btn .btn').click(function () {
+      var oBtn = $(this).attr('id')
+      if (oBtn === 'prev_btn') {
+        if (_id <= 1) {
+          $('.page_btn .btn').removeClass('active default')
+          $('#next_btn')
+            .addClass('active')
+            .siblings()
+            .addClass('default')
+          return
+        }
+        _id--
+      }
+      if (oBtn === 'next_btn') {
+        if (_id >= articleLens) {
+          $('.page_btn .btn').removeClass('active default')
+          $('#prev_btn')
+            .addClass('active')
+            .siblings()
+            .addClass('default')
+          return
+        }
+        _id++
+      }
+      console.log(_id)
+      window.location.href = _href.split('id=')[0] + 'id=' + _id
+    })
+  })
+</script>
+
+</html>
